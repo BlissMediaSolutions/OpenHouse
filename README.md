@@ -1,7 +1,7 @@
 <p align="center">
-<h1><b>Bliss Website</b></h1>
+<h1><b>Open House CIC Website</b></h1>
 <h4><b>A new Angular/Bootstrap website for Open House CIC</b></h4>
-
+<h5>Current website: www.openhouse.cic.org.au </h5>
 
 Status: Incomplete, Under Development
 
