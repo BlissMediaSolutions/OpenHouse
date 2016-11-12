@@ -1,0 +1,34 @@
+<!-- ========= START GOOGLE MAP ============== -->
+<style>
+body {
+  padding-top: 120px;
+  color: #000000;
+  }
+</style>
+
+<div class="container">
+    <h1 class="text-center" style="color: #27ace5">Contact Us</h1>
+    <br>
+</div>
+
+<!--  GOOGLE MAP -->
+<div id="map"></div>
+<script>
+  function initMap() {
+    var heidi = {lat: -37.756292, lng: 145.066764};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: heidi
+  });
+  var marker = new google.maps.Marker({
+  position: heidi,
+  map: map
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFzSRX1kF0z5DRrPltw0dL5Pc3jdxsXtA&callback=initMap"
+  async defer></script>
+
+<!-- ========= END GOOGLE MAP ============== -->
+<hr>
+<!-- ========= START CONTACT FORM ========== -->

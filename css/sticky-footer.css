@@ -16,6 +16,7 @@ body {
   /* Set the fixed height of the footer here */
   height: auto;
   min-height:200px;
-  background-color: #212121;
-  color: #f9f9f9;
+  background-color: #f1eeee;
+  color: #333
+  /*color: #f9f9f9;*/
 }

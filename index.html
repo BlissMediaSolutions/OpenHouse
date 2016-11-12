@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="Keywords" content="Onsite, computer, computers, Melbourne, Heidelberg, Preston, Ivanhoe">
+    <meta name="description" content="Open House, Christian Involvement Centre">
     <meta name="author" content="Danielle Walker">
     <link rel="icon" href="images/favicon.ico">
 
@@ -13,14 +15,17 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
+
+    <!--<link href="css/navbar-transparent.css" rel="stylesheet">-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="js/navbar-transparent.js"></script>-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,10 +36,38 @@
     <!-- Custom styles for this template -->
 
     <!--<link href="css/navbar-static-top.css" rel="stylesheet">-->
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
+</head>
+<!-- NAVBAR ================================================== -->
+<body>
+  <!--<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+
+  </button>
+      <a href="#/" class="pull-left"><img src="images/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services and Pricing</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>-->
+
+<!--<section class="banner">
+<div class="container">
+  <div class="row">
+  <h1>Transparent Background Example</h1>
+  </div>
+  </div>
+</section>-->
+
+<!-- ============ START NAVBAR =========== -->
     <div class="navbar wrapper">
       <div class="container" role="navigation">
 
@@ -110,17 +143,16 @@
                   <li><a href="#sponsors">Our Sponsors</a></li>
                 </ul>
               </li>
-
                  <!--<li role="separator" class="divider"></li>
                  <li class="dropdown-header">Nav header</li>-->
               <li><a href="#links">Useful links</a></li>
               <li><a href="#contact">Contact Us</a></li>
-              <li><button type="button" class="btn btn-primary" style="padding-top:5px">Donations</button></li>
+              <li><button type="button" class="btn btn-primary" style="margin-top:7px">Donations</button></li>
               <!--<li><a href="#donations" class="btn btn-link" role="button">Donations</a></li>-->
               <!--<button type="button" class="btn btn-primary">Link</button>-->
             </ul>
           <!--</li>
-              </ul>-->
+          </ul>-->
 
            <!--<ul class="nav navbar-nav navbar-right">
              <li class="active"><a href="#">Home</a></li>
@@ -147,11 +179,13 @@
      </nav>
    </div>
  </div>
+ <!-- ============ END NAVBAR =========== -->
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
+ <div data-ng-view></div>
+
+
+    <!-- Carousel ================================================== -->
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -159,18 +193,18 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="images/main_building.jpg" alt="First slide">
+          <img class="first-slide" src="images/offices-building.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Welcome</h1>
               <h1>We are Open House</h1>
-              <p>Open House is a Christian Involvement Centre focused on providing relief of such poverty, sickness, suffering, distress, misfortune, disability or helplessness within our community</p>
+              <p>Open House is a Christian Involvement Centre focused on providing relief of such poverty, sickness, suffering, distress, misfortune, disability or helplessness within our community</p>-->
               <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
-            </div>
+            <!--</div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="images/outside-office.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -180,7 +214,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="images/play-group.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -198,41 +232,41 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
+    </div>--><!-- /.carousel -->
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+  <!--  <div class="container marketing">-->
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <!--<div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div>--><!-- /.col-lg-4 -->
+        <!--<div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div>--><!-- /.col-lg-4 -->
+        <!--<div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        </div>--><!-- /.col-lg-4 -->
+      <!--</div>--><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <!--<hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -268,32 +302,77 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr class="featurette-divider">-->
 
       <!-- /END THE FEATURETTES -->
 
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+<!-- ========= START FOOTER ========== -->
 
-    </div><!-- /.container -->
+
+<footer class='footer'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-4 col-md-3 col-xs-6'>
+        <h4>Who We Are</h4>
+        <p><i>We are a Christian based community driven organization</i></p>
+        <p><a href='#about'>More...</a></p>
+      </div>
+
+      <div class='col-sm-2 col-xs-6 col-md-offset-1'>
+        <h4>Links</h4>
+        <ul class='list-unstyled'>
+          <li><a href='#/'>Home</a></li>
+          <li><a href='#about'>About Us</a></li>
+          <!--<li><a href='#hosting'>Hosting</a></li>-->
+          <li><a href='#design'>Web Design</a></li>
+          <li><a href='#donate'>Donations</a></li>
+          <li><a href='#contact'>Contact Us</a></li>
+        </ul>
+      </div>
+
+    <div class='clearfix visible-xs'></div>
+
+    <div class='col-sm-2 col-xs-6'>
+          <!--<h4>We're Social</h4>-->
+      <h4>We're Social</h4>
+        <ul class='list-unstyled'>
+          <!--<li><a href='http://twitter.com/codeschool'>Twitter</a></li>-->
+          <li><a href='https://www.facebook.com/openhousecic/'>Facebook</a></li>
+          <li><a href='#'>YouTube</a></li>
+          <li><a href='#'>Instagram</a></li>
+        </ul>
+    </div>
+
+    <div class='col-sm-4 col-md-3 col-md-offset-1 col-xs-6'>
+      <h4>Contact Us</h4>
+      <ul class='list-unstyled'>
+        <li><i class='glyphicon glyphicon-globe'></i> 67-71 Strathallan Rd, Macleod, Victoria<li>
+        <li><i class='glyphicon glyphicon-phone'></i> +613 9450 7600<li>
+        <li><i class='glyphicon glyphicon-envelope'></i> <a href='mailto:info@openhousecic.org.au'>info@openhousecic.org.au</a><li>
+      </ul>
+
+    <p>Open House - CIC &copy; 2016.</p>
+    </div>
+  </div>
+</div>
+</footer>
+
+    <!--</div>--><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
-  <script src="js/ng-csv.min.js"></script>
-  <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
+    <script src="js/ng-csv.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
