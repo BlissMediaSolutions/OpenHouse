@@ -17,9 +17,11 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-  background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+  background-color: #ffffff;
+  /*background-color: transparent; */
+  /* background: transparent; */
+  background: #ffffff;
+  border-color: transparent;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -33,6 +35,15 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+}
+
+#monthly-prayer {
+    margin-top: 10px;
+    margin-bottom: 10px
+    width: auto;
+    height: auto;
+    background-color: #2b40ff;
+    color: white;
 }
 
 
@@ -145,6 +156,13 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+@media only screen and (min-width : 768px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 /* Google Maps */

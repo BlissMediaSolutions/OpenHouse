@@ -5,6 +5,9 @@ app.config(function ($routeProvider) {
     }).when("/about", {
         //controller: 'aboutController',
         templateUrl: "templates/about.html"
+      }).when("/contact", {
+  //        controller: 'ContactController'
+          templateUrl: "templates/contact.html"
     }).when("/news", {
 //        controller: 'newsController',
         templateUrl: "templates/news.html"
