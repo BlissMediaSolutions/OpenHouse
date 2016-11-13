@@ -16,6 +16,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sticky-footer.css" rel="stylesheet">
+    <link href="css/navbar-multi-level.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -36,30 +37,76 @@
 
 <!-- ============ START NAVBAR =========== -->
 
-    <div class="navbar wrapper">
-      <div class="container" role="navigation">
+<!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/"><img src="images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <a href="#/" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-submenu">
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#who">Who We Are</a></li>
+                            <li><a href="#what">What We Do</a></li>
+                            <li><a href="#why">Why We Do It</a></li>
+                            <li><a href="#history">Our History</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#news">Latest News></a></li>
+                    <li><a href="#events">Coming Events</a></li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>-->
 
+
+<div class="navbar wrapper">
+<!--<div class="navbar navbar-default">-->
+  <div class="container" role="navigation">
         <!--<nav class="navbar opaque navbar-fixed-top">-->
-        <nav class="navbar navbar-fixed-top">
-          <div class="container">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
 
-         <div class="navbar-header">
+        <div class="navbar-header">
            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
              <span class="sr-only">Toggle navigation</span>
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a href="#" class="pull-left"><img src="images/logo.png"></a>
+           <a href="#/" class="pull-left"><img src="images/logo.png"></a>
          </div>
          <div id="navbar" class="navbar-collapse collapse">
            <ul class="nav navbar-nav navbar-right">
 
              <!-- Home Menu -->
              <li class="dropdown">
-               <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-               <ul class="dropdown-menu">
-                 <li><a href="#about">About Us</a></li>
+               <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Home </b><span class="caret"></span></a>
+               <ul class="dropdown-menu multi-level">
+                 <li class="dropdown-submenu">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                   <ul class="dropdown-menu">
+                      <li><a href="#who">Who We Are</a></li>
+                      <li><a href="#what">What We Do</a></li>
+                      <li><a href="#why">Why We Do It</a></li>
+                      <li><a href="#history">Our History</a></li>
+                    </ul>
+                  </li>
                  <li><a href="#news">Latest News</a></li>
                  <li><a href="#events">Coming Events</a></li>
                  <li><a href="#calendar">Calendar</a></li>
@@ -70,11 +117,21 @@
              </li>
 
              <!-- About Us Menu -->
-             <li class="dropdown">
-               <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
-               <ul class="dropdown-menu">
+            <li class="dropdown">
+               <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>About Us </b><span class="caret"></span></a>
+               <ul class="dropdown-menu multi-level">
                  <li><a href="#history">Our History</a></li>
-                 <li><a href="#people">Our People</a></li>
+                 <li class="dropdown-submenu">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">Our People</a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#board">Our Board</a></li>
+                     <li><a href="#team">Our Team</a></li>
+                     <li><a href="#volunteers">Volunteers</a></li>
+                     <li><a href="#supporters">Supporters</a></li>
+                     <li><a href="#partners">Partners</a></li>
+                   </ul>
+                 </li>
+                 <!--<li><a href="">Our People</a></li>-->
                  <li><a href="#photos">Photos</a></li>
                  <li><a href="#reports">Annual Reports</a></li>
                  <li><a href="#newsletter">News Letters</a></li>
@@ -84,8 +141,8 @@
              </li>
 
             <!-- Programs Menu -->
-             <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programs <span class="caret"></span></a>
+            <li class="dropdown">
+               <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Programs </b><span class="caret"></span></a>
                <ul class="dropdown-menu">
                  <li><a href="#mothers">Young Mothers</a></li>
                  <li><a href="#child">Children and Youth</a></li>
@@ -104,18 +161,18 @@
              </li>
 
              <!-- Testimonials Menu -->
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testimonials <span class="caret"></span></a>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Testimonials </b><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#participants">Participants</a></li>
-                  <li><a href="#caregiv">Care Givers</a></li>
+                  <li><a href="#caregive">Care Givers</a></li>
                   <li><a href="#sponsors">Our Sponsors</a></li>
                 </ul>
               </li>
 
-              <li><a href="#links">Useful links</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><button type="button" class="btn btn-primary" style="margin-top:7px">Donations</button></li>
+              <li><a href="#links"><b>Useful links </b></a></li>
+              <li><a href="#contact"><b>Contact Us </b></a></li>
+              <li><button type="button" class="btn btn-primary" style="margin-top:7px"><b>Donations</b></button></li>
             </ul>
          </div>
        </div>

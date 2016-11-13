@@ -7,7 +7,7 @@ app.config(function ($routeProvider) {
         templateUrl: "templates/about.html"
       }).when("/contact", {
   //        controller: 'ContactController'
-          templateUrl: "templates/contact.html"
+        templateUrl: "templates/contact.html"
     }).when("/news", {
 //        controller: 'newsController',
         templateUrl: "templates/news.html"
@@ -23,6 +23,21 @@ app.config(function ($routeProvider) {
     }).when("/bibleread", {
 //        controller: 'biblereadController',
         templateUrl: "templates/bibleread.html"
+    }).when("/pray", {
+//        controller: 'prayController',
+        templateUrl: "templates/pray.html"
+    }).when("/history", {
+//      controller: 'historyController',
+      templateUrl: "templates/history.html"
+    }).when("/board", {
+//      controller: 'boardController',
+      templateUrl: "templates/board.html"
+    }).when("/team", {
+//      controller: 'teamController',
+      templateUrl: "templates/team.html"
+    }).when("/links", {
+//      controller: 'linksController',
+      templateUrl: "templates/links.html"
     })
 });
 

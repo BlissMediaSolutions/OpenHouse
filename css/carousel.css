@@ -158,12 +158,12 @@ body {
   }
 }
 
-@media only screen and (min-width : 768px) {
+/*@media only screen and (min-width : 768px) { */
     /* Make Navigation Toggle on Desktop Hover */
-    .dropdown:hover .dropdown-menu {
+/*    .dropdown:hover .dropdown-menu {
         display: block;
     }
-}
+} */
 
 /* Google Maps */
 #map {
