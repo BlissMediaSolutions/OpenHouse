@@ -2,10 +2,19 @@ var app = angular.module("myApp", ["ngRoute", "ngAnimate", "ngCsv"]);
 app.config(function ($routeProvider) {
     $routeProvider.when("/", {
         templateUrl: "templates/home.html"
+    }).when("/who", {
+//      controller: 'whoController',
+        templateUrl: "templates/who.html"
+    }).when("/what", {
+//      controller: 'whatController',
+        templateUrl: "templates/what.html"
+    }).when("/why", {
+//      controller: 'whyController',
+        templateUrl: "templates/why.html"
     }).when("/about", {
         //controller: 'aboutController',
         templateUrl: "templates/about.html"
-      }).when("/contact", {
+    }).when("/contact", {
   //        controller: 'ContactController'
         templateUrl: "templates/contact.html"
     }).when("/news", {
@@ -26,6 +35,9 @@ app.config(function ($routeProvider) {
     }).when("/pray", {
 //        controller: 'prayController',
         templateUrl: "templates/pray.html"
+    }).when("/who", {
+//        controller: 'whoController',
+        templateUrl: "templates/who.html"
     }).when("/history", {
 //      controller: 'historyController',
       templateUrl: "templates/history.html"
