@@ -29,9 +29,9 @@ app.config(function ($routeProvider) {
     }).when("/ceo", {
 //        controller: 'ceoController'
         templateUrl: "templates/ceo.html"
-    }).when("/bibleread", {
+    }).when("/bibleRead", {
 //        controller: 'biblereadController',
-        templateUrl: "templates/bibleread.html"
+        templateUrl: "templates/bibleRead.html"
     }).when("/pray", {
 //        controller: 'prayController',
         templateUrl: "templates/pray.html"
