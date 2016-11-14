@@ -14,6 +14,7 @@ Developed with HTML5, CSS3, Angular.js/Bootstrap, javascript
 
 ##### Notes:
 - Website uses Google Maps API v3 - which requires a developer API Key (not included).
+- HTML templates currently contain Javascript code, which should really be contained within the Angular Controllers.. (but hey, im just learning Angular, so its a dirty implementation/hack just to get the website functioning in a limited time frame).
 
 ##### Developed by:
 - Danielle Walker
