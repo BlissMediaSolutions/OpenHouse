@@ -41,6 +41,9 @@ app.config(function ($routeProvider) {
     }).when("/history", {
 //      controller: 'historyController',
       templateUrl: "templates/history.html"
+    }).when("/ourhistory", {
+//      controller: 'ourhistoryController',
+      templateUrl: "templates/ourhistory.html"
     }).when("/board", {
 //      controller: 'boardController',
       templateUrl: "templates/board.html"
