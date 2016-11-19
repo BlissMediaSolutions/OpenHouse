@@ -50,9 +50,36 @@ app.config(function ($routeProvider) {
     }).when("/team", {
 //      controller: 'teamController',
       templateUrl: "templates/team.html"
+    }).when("/supporters", {
+//      controller: 'supportersController',
+      templateUrl: "templates/supporters.html"
+    }).when("/volunteers", {
+//      controller: 'volunteersController',
+      templateUrl: "templates/volunteers.html"
+    }).when("/partners", {
+//      controller: 'partnersController',
+      templateUrl: "templates/partners.html"
+    }).when("/photos", {
+//      controller: 'photosController',
+      templateUrl: "templates/photos.html"
+    }).when("/reports", {
+//      controller: 'reportsController',
+      templateUrl: "templates/reports.html"
+    }).when("/newsletter", {
+//      controller: 'newsletterController',
+      templateUrl: "templates/newsletter.html"
+    }).when("/jobs", {
+//      controller: 'jobsController',
+      templateUrl: "templates/jobs.html"
+    }).when("/policies", {
+//      controller: 'policiesController',
+      templateUrl: "templates/policies.html"
     }).when("/links", {
 //      controller: 'linksController',
       templateUrl: "templates/links.html"
+    }).when("/donations", {
+//      controller: 'donationsController',
+      templateUrl: "templates/donations.html"
     })
 });
 
