@@ -21,84 +21,374 @@ h2 {
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
 }
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: auto;
+}
+
+#myImg:hover {opacity: 0.5;}
 </style>
 
+<!-- === Jumbotron Header === -->
 <div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5"><b>Our Team</b></h2>
   </div>
 </div>
+<!-- === End Header === -->
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="images/team/person.png" alt="images/team/personal.png">
-        <div class="caption">
-          <h3>Paul Burgess</h3>
-          <p>...</p>
-          <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+   <div class="col-md-3">
+    <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal" src='images/team/Paul1.jpg' alt='...' />
+      <div style="font-family: 'Sofia', cursive;">
+        <p><h4 style="text-align: center"> Paul Burgess </h4></p>
+      </div>
+      <p><h5 style="text-align: center"> CEO </h5></p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Paul Burgess - CEO</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Qualifications: </b>MA (Applied Theology Family Youth and Community Work)</p>
+          <p><b>Experience: </b>Fifteen years experience in ministry to those on the fringe of society working for Churches, Not For Profits and Councils in the UK.</p>
+          <div style="font-family: 'Calligraffitti', cursive;">
+          <p>I love working for Open House and I am excited for the future. When I applied to work at Open House i saw the role as the coming together of all my previous roles &#38; experiences. I find it very interesting to look back at my life and see how what seemed liked isolated projects coming together for my role at Open House. I firmly believe it is God’s plan for my life coming together.</p>
+          <p>I feel very privileged to be leading Open House into the next generation. So what are my hopes for Open House? In the short term my hope is that Open House will continue to serve the local community both in supportive and practical ways. Also that Open House will become better known in the Banyule area and that projects will be developed to serve the real needs of those living in the community. And that in another 40 years we will still be here.</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="images/team/person.png" alt="images/team/personal.png">
-        <div class="caption">
-          <h3>Paul Southwick</h3>
-       <p>...</p>
-       <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+<div class="col-md-3">
+ <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal1" src='images/team/AnneR.jpg' alt='...' />
+  <div style="font-family: 'Sofia', cursive;">
+    <p><h4 style="text-align: center"> Anne Rewell </h4></p>
+  </div>
+  <p><h5 style="text-align: center"> Administration </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h4 class="modal-title">Anne Rewell - Administration</h4>
+     </div>
+     <div class="modal-body">
+       <p><b>Qualifications: </b> Completion of Year 12</p>
+       <p><b>Experience: </b>Secretarial, Administrative and Reception positions in Government departments, Private Enterprise and the Community Welfare sector</p>
+       <div style="font-family: 'Calligraffitti', cursive;">
+         <p>After working in many Secretarial/Admin/Reception positions in both private enterprise and government I decided that I would like to work for a community welfare type of organisation.  I was looking for more than just a job - I wanted to make a contribution to people's wellbeing.  I found what I was looking for at Open House and have been working in the position of Administration Coordinator for some years.  I have enjoyed working with the staff, volunteers and participants and many good friends have been made along the way.</p>
+         <p>Many special memories come to mind but one that I am reminded of every year around Christmas time concerns my beginnings at Open House.  I began working with the organisation only a few weeks before Christmas and one day I was walking down the side path returning to my office after lunch.  Wednesday Club was preparing for our Christmas celebrations by practising some carols.  Well, the music and singing that wafted out of the windows of the floor above the pathway was just beautiful; joyful and uplifting and they sounded like a choir of angels singing above my head.  We have had many enjoyable Christmas's at Open House since that time but the memory of that special day stays with me.</p>
+       </div>
      </div>
    </div>
  </div>
+</div>
+</div>
 
- <div class="col-sm-6 col-md-4">
-   <div class="thumbnail">
-     <img src="images/team/person.png" alt="images/team/personal.png">
-     <div class="caption">
-       <h3>Ann-Marie Fife</h3>
-       <p>...</p>
-       <p><a href="#" class="btn btn-default" role="button">Button</a></p>
-    </div>
+<div class="col-md-3">
+ <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal2" src='images/team/BrettR.jpg' alt='...' />
+  <div style="font-family: 'Sofia', cursive;">
+    <p><h4 style="text-align: center"> Brett Ross </h4></p>
   </div>
-  </div>
+  <p><h5 style="text-align: center"> Youth Work Manager </h5></p>
 
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/team/person.png" alt="images/team/personal.png">
-      <div class="caption">
-        <h3>Brett Ross</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+<!-- Modal -->
+<div class="modal fade" id="myModal2" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h4 class="modal-title">Brett Ross - Youth Work Manager</h4>
+     </div>
+     <div class="modal-body">
+       <p><b>Qualifications: </b>.....</p>
+       <p><b>Experience: </b>......</p>
+       <div style="font-family: 'Calligraffitti', cursive;">
+         <p>I was introduced to Open House by a friend who was on team. Soon after that I started volunteering as Camp Parents with Sara for a couple of years. In 1996 I came on staff as a Youth Skills Coordinator at our live-in farm in Hurstbridge.</p>
+         <p>I am currently managing the Youth Workshop Mentoring Program (MacLeod), supporting young people struggling with school and wanting to enter into a trade, we assist through hands on learning and friendship mentoring with a committed team of staff and volunteers.</p>
+         <p>I subscribe to the idea that “it takes a village to raise a child” and we all have apart to play in improving community. So Open House’s values resonate with me in providing long term friendship. I love seeing people grow and tracking through life together.</p>
+       </div>
      </div>
    </div>
-   </div>
+ </div>
+</div>
+</div>
 
-   <div class="col-sm-6 col-md-4">
-     <div class="thumbnail">
-       <img src="images/team/person.png" alt="images/team/personal.png">
-       <div class="caption">
-         <h3>Wendy Farringdon</h3>
-         <p>...</p>
-         <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+<!--<div class="container"> -->
+  <div class="row">
+   <div class="col-md-3">
+    <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal3" src='images/team/SteveM.jpg' alt='...' />
+    <div style="font-family: 'Sofia', cursive;">
+      <p><h4 style="text-align: center"> Steve Marks </h4></p>
+    </div>
+     <p><h5 style="text-align: center"> Youth Worker </h5></p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Steve Marks - Youth Worker</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Qualifications: </b>Bachelor of Business (Sport &#38; Leisure Management), White Card (Worksafe OHS), First Aid, Boat &#38; Scuba Diving license.</p>
+          <p><b>Experience: </b> Five years experience working with local government, council, schools, leisure centres, housing Commissions and sports clubs to develop community programs and recreational facilities.</p>
+          <div style="font-family: 'Calligraffitti', cursive;">
+            <p>My journey at Open House began in October 2014 after a number of months of sharing and discussing the organisation with Brett at the church we attend. I had been contemplating a change in career from sports consulting / recreation facility management to working with youth and in a practical environment. I had heard a lot about the amazing work Open House had done and was very interested in being apart of the organisation that was making a difference in many peoples lives. After much prayer and careful consideration I decided that I would resign from the corporate world and begin my career in Youth Work at Open House.</p>
+            <p>Something that makes me feel proud to be a part of Open House is its ability to provide a place for anyone to belong and feel loved, accepted and cared for. I’ve also been impressed with the volunteers, team members and staffs attitudes and heart towards making a difference in their local community. I am blessed to be a part of such an amazing organisation with wonderful volunteers, team and staff members and am thankful for the opportunities I have in making a difference in our local community"</p>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-
+  </div>
 </div>
-</div>
+</div> <!-- End Row -->
 
-<!--<div class="container">
-  <div class="media">
-    <div class="media-left">
-      <a href="#" class="thumbnail">
-        <img class="media-object" src="images/team/paulb.jpg" alt="...">
-      </a>
+<div class="row">
+ <div class="col-md-3">
+  <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal4" src='images/team/WendyF.jpg' alt='...' />
+    <div style="font-family: 'Sofia', cursive;">
+      <p><h4 style="text-align: center"> Wendy Farrington </h4></p>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading">Paul Burgess</h4>
-      <p>Postion: CEO</p>
+   <p><h5 style="text-align: center"> Program Manager </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal4" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Wendy Farrington - Program Manager</h4>
+      </div>
+      <div class="modal-body">
+        <p><b>Qualifications: </b>Certificate II Community Services Support Work, First Aid</p>
+        <p><b>Experience: </b> 20 years community work with semi/retired people, the lonely, those with learning difficulties and primary school children.</p>
+        <div style="font-family: 'Calligraffitti', cursive;">
+          <p>I have been involved with the Open House family since 1977, first doing voluntary work on and off over the years until God called me to join the staff in 2005. At first I ignored God because l had no desires to be part of the staff, l was happy plodding along doing my voluntary work.  I was at church one morning when this overwhelming sensation came over me and it was God reassuring me that he wanted me to join the staff, and that he would be there with me every step of the way. I sunk into my seat and wanted to hide but knew that wouldn't do me any good because God knows where we are and everything about us. I give thanks and praise to God for calling me to be a part of this amazing ministry, to see lives changes and people grow is an incredible blessing.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>-->
+</div>
+</div>
+
+
+<div class="col-md-3">
+  <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal5" src='images/team/BecC.jpg' alt='...' />
+    <div style="font-family: 'Sofia', cursive;">
+      <p><h4 style="text-align: center"> Bec Cole </h4></p>
+    </div>
+  <p><h5 style="text-align: center"> Youth Worker </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal5" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h4 class="modal-title">Bec Cole - Youth Worker</h4>
+     </div>
+     <div class="modal-body">
+       <p><b>Qualifications: </b>Bachelor of Youth Work</p>
+       <p><b>Experience: </b>.....</p>
+       <div style="font-family: 'Calligraffitti', cursive;">
+         <p>I began my journey with Open House in 2016 and I am greatful to have joined such a wonderful group of people, i am so excited to see what the future beings for Open House. In the time I have been here, I have already seen how lives have been impacted by the wonderful programs that are offered here at Open House, and I cannot wait to see the many more lives that will be changed because of God and the dedicated staff and volunteers. The future of the youth programs that run at Open House is bright and the team cannot wait to expand these programs and create more outreach within the local community.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+
+
+<div class="col-md-3">
+  <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal6" src='images/team/HarmonyC.jpg' alt='...' />
+    <div style="font-family: 'Sofia', cursive;">
+      <p><h4 style="text-align: center"> Harmony Cook </h4></p>
+    </div>
+  <p><h5 style="text-align: center"> Youth Worker </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal6" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h4 class="modal-title">Harmony Cook - Youth Worker</h4>
+     </div>
+     <div class="modal-body">
+       <p><b>Qualifications: </b>Diploma of hospitality (Management), Certificate IV disability, First Aid Level 2</p>
+       <p><b>Experience: </b>5 yrs experience in youth and adult work, 10yrs experience of hospitality, event planning, management of business (cafés and Bakers Delight)</p>
+       <div style="font-family: 'Calligraffitti', cursive;">
+         <p>My journey began in 2010 when I started to volunteer in a girls mentoring program. This had been my first experience in volunteering which then opened up the door for many more opportunities to get involved in at Open House.</p>
+         <p>The following year I was offered to became a staff member and take on the role of the Adele Oldmedow traineeship. This traineeship was in memory of Adele and it was to give young people the opportunity to grow in life and the opportunity to help others just like Adele. Five years on I am still here and enjoying my role giving long term friendship and providing a place for young people to belong and be themselves within the programs that we run.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+
+<div class="col-md-3">
+ <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal7" src='images/team/TimW.jpg' alt='...' />
+  <div style="font-family: 'Sofia', cursive;">
+    <p><h4 style="text-align: center"> Tim Womersly </h4></p>
+  </div>
+  <p><h5 style="text-align: center"> Youth Worker </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal7" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h4 class="modal-title">Tim Womersly - Youth Worker</h4>
+     </div>
+     <div class="modal-body">
+       <p><b>Qualifications: </b>Bachelor of Social Science</p>
+       <p><b>Experience: </b>.....</p>
+       <div style="font-family: 'Calligraffitti', cursive;">
+         <p>My journey at Open House began in April 2014, when a worker from Volunteers of Banyule arranged for me to meet a guy called Glenn at the Ivanhoe site. As soon as I arrived I recognised the building from my school days and remembered walking past a dozen times but not really knowing what went on inside. After meeting Glenn I had no idea what to expect.</p>
+         <p>My first volunteer experience was in the Friday youth group. I remember we had to take our shoes off for a game. I was wearing Rudolf Christmas socks and my face went as red as Rudolf’s nose. I found as a volunteer I would regularly come out of my comfort zone and as a result, experience growth and build friendships with the participants.</p>
+         <p>After attending the Southern Cross Kids Camp in early 2015, I decided to leave my job as a mechanic and study youth work. During the course I did my placements with The Salvation Army and Open House. I always felt that Open House was where I wanted to be. An opportunity came to work part-time at Open House, with the transition to become full-time on the Adele Traineeship. I am incredibly blessed to be supported by my wife and by the team at Open House. I’m thankful for this opportunity to serve, to grow and to be a part of young people’s lives in the community.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+
+</div> <!-- End Row -->
+
+<div class="row">
+ <div class="col-md-6">
+  <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal8" src='images/team/person-man.png' alt='...' />
+    <div style="font-family: 'Sofia', cursive;">
+      <p><h4 style="text-align: center"> Paul Southwick </h4></p>
+    </div>
+    <p><h5 style="text-align: center"> Finance Manager </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal8" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Paul Southwick - Finance Manager</h4>
+      </div>
+      <div class="modal-body">
+        <p><b>Qualifications: </b>BMS, GradDipMktg, DipFreeJourn, C.A., CMA, ACIS, AGIA, MAICD, PPL</p>
+        <p><b>Experience: </b>.....</p>
+        <div style="font-family: 'Calligraffitti', cursive;">
+        <p>By the grace of God my life has been blessed. I have been privileged to work, live and travel all around the world for some of the very best companies.</p>
+        <p>Many people have not had these opportunities or been blessing with a great start in life. Now is the time to put back and help those who are less fortunate. Everyone is special, and everyone was made by God. We should take Jesus’ example and help them “have life and live it to the fullest”.</p>
+        <p>Jesus said “I am the way, the truth and the life, No one comes to the father except by me.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6">
+ <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal9" src='images/team/AnnM.jpg' alt='...' />
+  <div style="font-family: 'Sofia', cursive;">
+    <p><h4 style="text-align: center"> Ann-Marie Fife </h4></p>
+  </div>
+  <p><h5 style="text-align: center"> Pastoral Care Worker </h5></p>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal9" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h4 class="modal-title">Ann-Marie Fife - Pastoral Care Worker</h4>
+     </div>
+     <div class="modal-body">
+       <p><b>Qualifications: </b> BA Arts, Grad Dip Counselling, Adv. Cert, Residential and Community Service/Youth Work </p>
+       <p><b>Experience: </b>Chaplain at Macleod Secondary College</p>
+       <div style="font-family: 'Calligraffitti', cursive;">
+         <p>Ann-Marie needs to write something to go here...</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+
+
+
+</div> <!-- End Row -->
+</div> <!-- End Container -->
+
+
+<!--
+<div class="row">
+ <div class="col-md-4">
+   <div class="thumbnail">
+     <a href="/w3images/lights.jpg">
+       <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+       <div class="caption">
+         <p>Lorem ipsum...</p>
+       </div>
+     </a>
+   </div>
+ </div>
+ <div class="col-md-4">
+   <div class="thumbnail">
+     <a href="/w3images/fjords.jpg">
+       <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+       <div class="caption">
+         <p>Lorem ipsum...</p>
+       </div>
+     </a>
+   </div>
+ </div>
+ <div class="col-md-4">
+   <div class="thumbnail">
+     <a href="/w3images/fjords.jpg">
+       <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+       <div class="caption">
+         <p>Lorem ipsum...</p>
+       </div>
+     </a>
+   </div>
+ </div>
+</div> -->
