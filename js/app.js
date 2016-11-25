@@ -80,15 +80,21 @@ app.config(function ($routeProvider) {
     }).when("/boys", {
 //      controller: 'boysController',
       templateUrl: "templates/boys.html"
-    }).when("girls", {
+    }).when("/girls", {
 //      controller: 'girlsController',
       templateUrl: "templates/girls.html"
-    }).when("teens", {
+    }).when("/teens", {
 //      controller: 'teensController',
       templateUrl: "templates/teens.html"
-    }).when("youth", {
+    }).when("/youth", {
 //      controller: 'youthController',
       templateUrl: "templates/youth.html"
+    }).when("/adult", {
+//      controller: 'adultController',
+      templateUrl: "templates/adult.html"
+    }).when("/bibleFellow", {
+//      controller: 'bibleFellowController',
+      templateUrl: "templates/bibleFellow.html"
     }).when("/links", {
 //      controller: 'linksController',
       templateUrl: "templates/links.html"
