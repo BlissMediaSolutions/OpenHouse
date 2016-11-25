@@ -74,6 +74,21 @@ app.config(function ($routeProvider) {
     }).when("/policies", {
 //      controller: 'policiesController',
       templateUrl: "templates/policies.html"
+    }).when("/mothers", {
+//      controller: 'mothersController',
+      templateUrl: "templates/mothers.html"
+    }).when("/boys", {
+//      controller: 'boysController',
+      templateUrl: "templates/boys.html"
+    }).when("girls", {
+//      controller: 'girlsController',
+      templateUrl: "templates/girls.html"
+    }).when("teens", {
+//      controller: 'teensController',
+      templateUrl: "templates/teens.html"
+    }).when("youth", {
+//      controller: 'youthController',
+      templateUrl: "templates/youth.html"
     }).when("/links", {
 //      controller: 'linksController',
       templateUrl: "templates/links.html"
