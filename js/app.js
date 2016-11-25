@@ -113,6 +113,9 @@ app.config(function ($routeProvider) {
     }).when("/meal", {
 //      controller: 'mealController',
       templateUrl: "templates/meal.html"
+    }).when("/caregive", {
+//      controller: 'caregiveController',
+      templateUrl: "templates/caregive.html"
     }).when("/links", {
 //      controller: 'linksController',
       templateUrl: "templates/links.html"
