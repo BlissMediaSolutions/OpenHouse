@@ -77,6 +77,9 @@ app.config(function ($routeProvider) {
     }).when("/mothers", {
 //      controller: 'mothersController',
       templateUrl: "templates/mothers.html"
+    }).when("/child", {
+//      controller: 'childController',
+      templateUrl: "templates/child.html"
     }).when("/boys", {
 //      controller: 'boysController',
       templateUrl: "templates/boys.html"
@@ -95,6 +98,21 @@ app.config(function ($routeProvider) {
     }).when("/bibleFellow", {
 //      controller: 'bibleFellowController',
       templateUrl: "templates/bibleFellow.html"
+    }).when("/backyard", {
+//      controller: 'backyardController',
+      templateUrl: "templates/backyard.html"
+    }).when("/clubwork", {
+//      controller: 'clubworkController',
+      templateUrl: "templates/clubwork.html"
+    }).when("/arts", {
+//      controller: 'artsController',
+      templateUrl: "templates/arts.html"
+    }).when("/mens", {
+//      controller: 'mensController',
+      templateUrl: "templates/mens.html"
+    }).when("/meal", {
+//      controller: 'mealController',
+      templateUrl: "templates/meal.html"
     }).when("/links", {
 //      controller: 'linksController',
       templateUrl: "templates/links.html"
