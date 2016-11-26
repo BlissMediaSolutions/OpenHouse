@@ -21,7 +21,7 @@ h2 {
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
 }
-
+/*
 .row.match-my-cols {
     overflow: hidden;
 }
@@ -29,26 +29,222 @@ h2 {
 .row.match-my-cols [class*="col-"]{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
+} */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: auto;
 }
+
+#myImg:hover {opacity: 0.5;}
+
 </style>
 
+<!-- === Jumbotron Header === -->
 <div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5"><b>Our Board</b></h2>
   </div>
 </div>
+<!-- === End Header === -->
 
-<!--<div class="media">
-  <div class="media-left">
-    <img src="img_avatar1.png" class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">John Doe</h4>
-    <p>Lorem ipsum...</p>
-  </div>
-</div>-->
-
+<!-- === start Container === -->
 <div class="container">
+  <div class="row">
+   <div class="col-md-3">
+    <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal" src='images/board/DWoods.jpg' alt='...' />
+      <div style="font-family: 'Sofia', cursive;">
+        <p><h4 style="text-align: center"> Mr David Woods, OAM - Chairman </h4></p>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Mr David Woods, OAM - Chairman</h4>
+            </div>
+            <div class="modal-body">
+              <p><b>Qualifications: </b>FCPA, AGIA</p>
+              <p><b>Experience: </b>Founding Director 1975</p>
+              <p>Former Team Member, Secretary and Treasurer.</p>
+              <p>Experienced Company Secretary and Accountant.</p>
+              <p>Mr Woods brings a wealth of wisdom and love for the work and people of Open House.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal1" src='images/board/Paul1.jpg' alt='...' />
+      <div style="font-family: 'Sofia', cursive;">
+        <p><h4 style="text-align: center"> Mr Paul Burgess - CEO </h4></p>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Mr Paul Burgess - CEO</h4>
+            </div>
+            <div class="modal-body">
+              <p><b>Qualifications: </b> MA (Applied Theology Family Youth and Community Work)</p>
+              <p><b>Experience: </b>Fifteen years experience in ministry to those on the fringe of society working for Churches, Not For Profits and Councils in the UK.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+     <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal2" src='images/board/PSporton.jpg' alt='...' />
+      <div style="font-family: 'Sofia', cursive;">
+        <p><h4 style="text-align: center"> Mr Phillip Sporton </h4></p>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Mr Phillip Sporton</h4>
+            </div>
+            <div class="modal-body">
+              <p><b>Qualifications: </b>Bachelor of Applied Science (Applied Electronics)</p>
+              <p><b>Experience: </b>Former Executive Director, Service Delivery South and West - Telstra</p>
+              <p>Mr Sporton brings Management skills and expertise with a heart for the disadvantaged</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal3" src='images/board/RAnderson.jpg' alt='...' />
+      <div style="font-family: 'Sofia', cursive;">
+        <p><h4 style="text-align: center"> Mr Rex Anderson </h4></p>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Mr Rex Anderson</h4>
+            </div>
+            <div class="modal-body">
+              <p><b>Qualifications: </b>Retail Financial Trading Certificate</p>
+              <p><b>Experience: </b> Thirty three years in the Banking industry.</p>
+              <p>Former Administration &#38; Finance Manager at Open House (2000 – 2009)</p>
+              <p>Mr Anderson brings first hand insight and vision into the operations of Open House.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Row -->
+
+  <div class="row">
+   <div class="col-md-4">
+    <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal4" src='images/board/MLamb.jpg' alt='...' />
+      <div style="font-family: 'Sofia', cursive;">
+        <p><h4 style="text-align: center"> Ms Melanie Lamb </h4></p>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Ms Melanie Lamb</h4>
+            </div>
+            <div class="modal-body">
+              <p><b>Qualifications: </b>B.Min (Bachelor of Ministries)</p>
+              <p><b>Experience: </b>Hospital Chaplain</p>
+              <p>Former staff member January 1990 – December 2000</p>
+              <p>Ms Lamb brings valuable experience and insights from previously working at Open House and a heart to see people grow holistically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+     <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal5" src='images/board/MDonohue.jpg' alt='...' />
+       <div style="font-family: 'Sofia', cursive;">
+         <p><h4 style="text-align: center"> Mr Michael Donohue </h4></p>
+       </div>
+
+       <!-- Modal -->
+       <div class="modal fade" id="myModal5" role="dialog">
+         <div class="modal-dialog">
+
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Mr Michael Donohue</h4>
+             </div>
+             <div class="modal-body">
+               <p><b>Qualifications: </b>Bachelor of Applied Science (Computer Science)</p>
+               <p><b>Experience: </b>Founder and Director of medium sized IT Consulting Company</p>
+               <p>Former CEO and Country Manager Deutsche Telekom (German Telecom)</p>
+               <p>Mr Donohue brings a wealth of experience and knowledge from the commercial world together with an enthusiasm, desire and capacity to help disadvantaged people.</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-4">
+      <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal6" src='images/board/ORuiz.jpg' alt='...' />
+        <div style="font-family: 'Sofia', cursive;">
+          <p><h4 style="text-align: center"> Mr Oscar Ruiz </h4></p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal6" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Mr Oscar Ruiz</h4>
+              </div>
+              <div class="modal-body">
+                <p><b>Qualifications: </b>Diploma of Management, Associate Diploma of Electronic Engineering</p>
+                <p><b>Experience: </b>Former Client Solutions Executive (IBM)</p>
+                <p>Mr Ruiz brings substantial managerial, computer and personnel skills and has a heart to see the ongoing development of the work so that people’s lives are positively impacted.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> <!-- == End Row === -->
+</div> <!-- === End Container === -->
+
+<!--<div class="container">
   <div class="row match-my-cols">
     <div class="col-sm-6">
       <div class="jumbotron">
@@ -72,10 +268,8 @@ h2 {
   <div class="jumbotron">
     <div class="media">
       <div class="media-left media-middle">
-        <!--<a href="">-->
-        <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-        <!--</a>-->
-      </div>
+                <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
+        </div>
       <div class="media-body">
         <h4 class="media-heading">Phillip John Sporton </h4>
         <h5><b>Qualifications:</b> Bachelor of Applied Science (Applied Electronics)</h5>
@@ -183,6 +377,4 @@ h2 {
     </div>
   </div>
 </div>
-</div>
-
-</div> <!-- === End Container === -->
+</div> -->
