@@ -22,21 +22,34 @@ h2 {
   color: #FFF; // change text color
 }
 
-.row.match-my-cols {
-    overflow: hidden;
+/* === Custom CSS for Hovering over Image === */
+#myImg {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}
+#myImg:hover {opacity: 0.6;}
 </style>
 
+<!-- === Start Script for Modal Image === -->
+<script>
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');
+		});
+});
+</script>
+<!-- === End Script for Modal Image === -->
+
+<!-- === Jumbotron Header Start === -->
 <div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5"><b>Backyard Sports</b></h2>
   </div>
 </div>
+<!-- === Jumbotron Header End === -->
 
 <div class ="container">
   <div class="jumbotron">
@@ -45,6 +58,19 @@ h2 {
     <h5>Every Thursday after school Open House’s youth workers run a popular outdoor games session for 30 or more boys and girls in a local park – the Malahan Reserve. It’s all about having fun in a safe environment and everyone is welcome. Games include soccer, footie, basketball and more.</h5>
     <h5>Our program provides youths with an opportunity to get out of the house, away from television and computer screens, and something healthy and fun to look forward to.</h5>
     <h5>Some participants, once they experienced the friendly nature of our offering, later found their way to on site programs at our Macleod facilities.</h5>
-    <img id="myImg" class="img-responsive center-block" src="images/Avaition-Program.jpg" alt="Fun 4 Girls Program" width="300" height="200">
+    <img id="myImg" class="img-responsive center-block pop" src="images/programs/backyard-sports.jpg" alt="Backyard Sports Program" width="150" height="100">
+  </div>
+</div>
+
+
+<!-- === Modal Control of Image === -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="images/programs/backyard-sports.jpg" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
   </div>
 </div>
