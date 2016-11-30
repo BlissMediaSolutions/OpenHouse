@@ -22,21 +22,34 @@ h2 {
   color: #FFF; // change text color
 }
 
-.row.match-my-cols {
-    overflow: hidden;
+/* === Custom CSS for Hovering over Image === */
+#myImg {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}
+#myImg:hover {opacity: 0.6;}
 </style>
 
+<!-- === Start Script for Modal Image === -->
+<script>
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');
+		});
+});
+</script>
+<!-- === End Script for Modal Image === -->
+
+<!-- === Jumbotron Header Start === -->
 <div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5"><b>Fun 4 Teens</b></h2>
   </div>
 </div>
+<!-- === Jumbotron Header End === -->
 
 <div class ="container">
   <div class="jumbotron">
@@ -45,6 +58,18 @@ h2 {
     <h5>Our popular program include a relaxed Friday afternoon drop in “café like” centre for children, followed by a similar offering for teens in the evening at our Macleod facilities.</h5>
     <h5>This is a chance for children and teens to unwind after a busy week in a friendly, safe and fun atmosphere. The offering includes tasty cooked light snacks with some healthy fruit. With lots of volunteers and youth workers there is always someone to sit down with for a chat or to see who can perform like NBA superstar Steve Curry at the basketball hoop in the hall. </h5>
     <h5>A drop off service is offered for those participants needing a safe ride home. </h5>
-    <img id="myImg" class="img-responsive center-block" src="images/Avaition-Program.jpg" alt="Fun 4 Teens Program" width="300" height="200">
+    <img id="myImg" class="img-responsive center-block pop" src="images/programs/fun_for_teens.jpg" alt="Fun 4 Teens Program" width="150" height="100">
+  </div>
+</div>
+
+<!-- === Modal Control of Image === -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="images/programs/fun_for_teens.jpg" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
   </div>
 </div>

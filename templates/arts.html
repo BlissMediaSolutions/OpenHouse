@@ -22,21 +22,34 @@ h2 {
   color: #FFF; // change text color
 }
 
-.row.match-my-cols {
-    overflow: hidden;
+/* === Custom CSS for Hovering over Image === */
+#myImg {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}
+#myImg:hover {opacity: 0.6;}
 </style>
 
+<!-- === Start Script for Modal Image === -->
+<script>
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');
+		});
+});
+</script>
+<!-- === End Script for Modal Image === -->
+
+<!-- === Jumbotron Header Start === -->
 <div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5"><b>Arts and Crafts</b></h2>
   </div>
 </div>
+<!-- === Jumbotron Header End === -->
 
 <div class ="container">
   <div class="jumbotron">
@@ -46,6 +59,19 @@ h2 {
     <h5>As well as arts and craft like painting, embroidery, carpet making and drawing there are a regular sing-songs, lunch, coffees, teas and coffees from our well spec’d kitchen and lots of friends – both staff and volunteers who are interested in what everyone is up to. Many birthdays were celebrated. Everyone is special at Open House.</h5>
     <h5>Participants’ art works is entered into the annual Whittlesea Show – with many wining prizes. </h5>
     <h5>A highlight in 2016 was a card making workshop where participants made beautiful gifts for their loved ones with string, ribbons, pearls, and special cards or papers.</h5>
-    <img id="myImg" class="img-responsive center-block" src="images/Avaition-Program.jpg" alt="Arts and Crafts Program" width="300" height="200">
+    <img id="myImg" class="img-responsive center-block pop" src="images/programs/arts_and_craft.jpg" alt="Arts and Crafts Program" width="150" height="100">
+  </div>
+</div>
+
+
+<!-- === Modal Control of Image === -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="images/programs/arts_and_craft.jpg" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
   </div>
 </div>
