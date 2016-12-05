@@ -30,16 +30,16 @@
     <![endif]-->
 
     <!-- ===== Google Fonts ===== -->
-    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Kaushan+Script|Sofia" rel="stylesheet">
 
 </head>
 
 <body>
 <style>
 /* ==== CUSTOM STYLING FOR NAVBAR ==== */
-.navbar-xs { min-height:65px; height: 65px; background-color: #ffffff; border: 0;}
+.navbar-xs { min-height:65px; height: 65px; background-color: #ffffff; border: 0;} /* box-shadow: 0px 0px 0px #888888;} */
 .navbar-xs .navbar-brand{ padding: 0px 12px; font-size: 20px; line-height: 35px; background-color: #ffffff;}
-.navbar-xs .navbar-nav > li > a {  padding-top: 15px; padding-bottom: 5px; line-height: 28px; color: #000fb5;} /* background-color: #ffffff; }*/
+.navbar-xs .navbar-nav > li > a {  padding-top: 15px; padding-bottom: 5px; line-height: 28px; color: #000fb5;}
 
 /* ===== Custom CSS for Small-Screen Menu Display ===== */
 @media (max-width: 767px){
@@ -58,6 +58,22 @@ body {
     padding-top: 65px;
 }
 </style>
+
+<script>
+/*$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#navbar-xs').css('box-shadow','1px 1px 5px #888888');
+       } else {
+          $('#navbar-xs').css('box-shadow', '0px 0px 0px #888888');
+       }
+   });
+});*/
+</script>
 
 <!--<div class="navbar wrapper">
   <div class="container" role="navigation">
@@ -228,6 +244,7 @@ body {
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
     <script src="js/ng-csv.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/navbar-scroll.js"></script>
 
   </body>
 </html>
