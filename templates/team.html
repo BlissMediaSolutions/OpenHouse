@@ -12,6 +12,10 @@ h2 {
   text-shadow: 1px 1px #000000;
 }
 
+h2, h4, p {
+  font-family: 'Raleway', sans-serif;
+}
+
 .jumbotron-custom {
   margin-top: 20px;
   background: #000 url("images/banner_background.jpg") no-repeat center center;
@@ -30,13 +34,24 @@ h2 {
     margin: auto;
 }
 
+#myImg1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: auto;
+}
+
 #myImg:hover {opacity: 0.5;}
+#myImg1:hover {opacity: 0.5;}
+
+
 </style>
 
 <!-- === Jumbotron Header === -->
 <div class="jumbotron jumbotron-custom">
   <div class="container">
-    <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Our Team</b></h2>
+    <h2 class="text-center"><b>Our Team</b></h2>
   </div>
 </div>
 <!-- === End Header === -->
@@ -45,63 +60,85 @@ h2 {
   <div class="row">
    <div class="col-md-3">
     <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal" src='images/team/Paul1.jpg' alt='...' />
-      <div style="font-family: 'Sofia', cursive;">
-        <p><h4 style="text-align: center"> Paul Burgess </h4></p>
-      </div>
+      <!--<div style="font-family: 'Sofia', cursive;">-->
+        <p><h4 style="text-align: center; font-family: 'Sofia', cursive;"> Paul Burgess </h4></p>
+      <!--</div>-->
       <p><h5 style="text-align: center"> CEO </h5></p>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+      <!-- Modal -->
+      <div class="modal fade PaulS" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Paul Burgess - CEO</h4>
-        </div>
-        <div class="modal-body">
-          <p><b>Qualifications: </b>MA (Applied Theology Family Youth and Community Work)</p>
-          <p><b>Experience: </b>Fifteen years experience in ministry to those on the fringe of society working for Churches, Not For Profits and Councils in the UK.</p>
-          <div style="font-family: 'Calligraffitti', cursive;">
-          <p>I love working for Open House and I am excited for the future. When I applied to work at Open House i saw the role as the coming together of all my previous roles &#38; experiences. I find it very interesting to look back at my life and see how what seemed liked isolated projects coming together for my role at Open House. I firmly believe it is God’s plan for my life coming together.</p>
-          <p>I feel very privileged to be leading Open House into the next generation. So what are my hopes for Open House? In the short term my hope is that Open House will continue to serve the local community both in supportive and practical ways. Also that Open House will become better known in the Banyule area and that projects will be developed to serve the real needs of those living in the community. And that in another 40 years we will still be here.</p>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" style="text-align:center"><b>Paul Burgess - CEO</b></h4>
+            </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="images\team\Paul1.jpg" alt="Smiley face" height="220" width="280">
+                <p></p>
+              <!--<div style="font-family: 'Raleway', sans-serif;">-->
+                <p><b>Qualifications: </b>MA (Applied Theology Family Youth and Community Work)</p>
+                <p><b>Experience: </b>Fifteen years experience in ministry to those on the fringe of society working for Churches, Not For Profits and Councils in the UK.</p>
+              <!--</div>-->
+              </div>
+            <!--<div class="col-xs-1"></div>-->
+              <div class="col-xs-6">
+                <!--<div style="font-family: 'Calligraffitti', cursive;">-->
+                  <p style="font-family: 'Calligraffitti', cursive;">I love working for Open House and I am excited for the future. When I applied to work at Open House i saw the role as the coming together of all my previous roles &#38; experiences. I find it very interesting to look back at my life and see how what seemed liked isolated projects coming together for my role at Open House. I firmly believe it is God’s plan for my life coming together.</p>
+                  <p style="font-family: 'Calligraffitti', cursive;">I feel very privileged to be leading Open House into the next generation. So what are my hopes for Open House? In the short term my hope is that Open House will continue to serve the local community both in supportive and practical ways. Also that Open House will become better known in the Banyule area and that projects will be developed to serve the real needs of those living in the community. And that in another 40 years we will still be here.</p>
+                <!--</div>-->
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="col-md-3">
- <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal1" src='images/team/AnneR.jpg' alt='...' />
-  <div style="font-family: 'Sofia', cursive;">
-    <p><h4 style="text-align: center"> Anne Rewell </h4></p>
+  <div class="col-md-3">
+    <img height="100" width="140" align="middle" id="myImg1" data-trigger="hover" data-toggle="modal" data-target="#myModal1" src='images/team/AnneR.jpg' alt='...' />
+    <!--<div style="font-family: 'Sofia', cursive;">-->
+      <p><h4 style="text-align: center; font-family: 'Sofia', cursive;"> Anne Rewell </h4></p>
+    <!--</div>-->
+    <p><h5 style="text-align: center"> Administration </h5></p>
+
+    <!-- Modal -->
+    <div class="modal fade AnneR" id="myModal1" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" style="text-align:center"><b>Anne Rewell - Administration</b></h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="images\team\AnneR.jpg" alt="Smiley face" height="220" width="280">
+                <p></p>
+                <!--<div style="font-family: 'Raleway', sans-serif;">-->
+                <p><b>Qualifications: </b> Completion of Year 12</p>
+                <p><b>Experience: </b>Secretarial, Administrative and Reception positions in Government departments, Private Enterprise and the Community Welfare sector</p>
+                <!--</div>-->
+              </div>
+              <div class="col-xs-6">
+                <!--<div style="font-family: 'Calligraffitti', cursive;">-->
+                  <p style="font-family: 'Calligraffitti', cursive;">After working in many Secretarial/Admin/Reception positions in both private enterprise and government I decided that I would like to work for a community welfare type of organisation.  I was looking for more than just a job - I wanted to make a contribution to people's wellbeing.  I found what I was looking for at Open House and have been working in the position of Administration Coordinator for some years.  I have enjoyed working with the staff, volunteers and participants and many good friends have been made along the way.</p>
+                  <p style="font-family: 'Calligraffitti', cursive;">Many special memories come to mind but one that I am reminded of every year around Christmas time concerns my beginnings at Open House.  I began working with the organisation only a few weeks before Christmas and one day I was walking down the side path returning to my office after lunch.  Wednesday Club was preparing for our Christmas celebrations by practising some carols.  Well, the music and singing that wafted out of the windows of the floor above the pathway was just beautiful; joyful and uplifting and they sounded like a choir of angels singing above my head.  We have had many enjoyable Christmas's at Open House since that time but the memory of that special day stays with me.</p>
+                <!--</div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <p><h5 style="text-align: center"> Administration </h5></p>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal1" role="dialog">
- <div class="modal-dialog">
-
-   <!-- Modal content-->
-   <div class="modal-content">
-     <div class="modal-header">
-       <button type="button" class="close" data-dismiss="modal">&times;</button>
-       <h4 class="modal-title">Anne Rewell - Administration</h4>
-     </div>
-     <div class="modal-body">
-       <p><b>Qualifications: </b> Completion of Year 12</p>
-       <p><b>Experience: </b>Secretarial, Administrative and Reception positions in Government departments, Private Enterprise and the Community Welfare sector</p>
-       <div style="font-family: 'Calligraffitti', cursive;">
-         <p>After working in many Secretarial/Admin/Reception positions in both private enterprise and government I decided that I would like to work for a community welfare type of organisation.  I was looking for more than just a job - I wanted to make a contribution to people's wellbeing.  I found what I was looking for at Open House and have been working in the position of Administration Coordinator for some years.  I have enjoyed working with the staff, volunteers and participants and many good friends have been made along the way.</p>
-         <p>Many special memories come to mind but one that I am reminded of every year around Christmas time concerns my beginnings at Open House.  I began working with the organisation only a few weeks before Christmas and one day I was walking down the side path returning to my office after lunch.  Wednesday Club was preparing for our Christmas celebrations by practising some carols.  Well, the music and singing that wafted out of the windows of the floor above the pathway was just beautiful; joyful and uplifting and they sounded like a choir of angels singing above my head.  We have had many enjoyable Christmas's at Open House since that time but the memory of that special day stays with me.</p>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</div>
+<!--</div>-->
 
 <div class="col-md-3">
  <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal2" src='images/team/BrettR.jpg' alt='...' />
@@ -358,6 +395,24 @@ h2 {
 </div> <!-- End Row -->
 </div> <!-- End Container -->
 
+<script>
+$(document).ready(function(){
+    $( "#myImg" ).hover(function() {
+           $('.PaulS').modal({
+        show: true
+    });
+  });
+});
+
+$(document).ready(function(){
+    $( "#myImg1" ).hover(function() {
+           $('.AnneR').modal({
+        show: true
+    });
+  });
+});
+
+</script>
 
 <!--
 <div class="row">

@@ -8,10 +8,8 @@ h1 {
   border-top-right-radius: 10px;
 }
 
-.full-screen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+h2, h3, h4, p {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Custom Styling for Blank Lines of different Widths */
@@ -28,20 +26,84 @@ h1 {
 	height:30px;
 }
 
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
 /* Custom styling for Carousel Text */
-.carousel-heading {
-    color: #27ace5;
-    text-shadow: 2px 2px #000000;
+#carousel-heading {
+    color: #f7f7f9;
+    text-shadow: 1px 1px #000000;
     font-weight: bold;
-    font-size: 80px;
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial;
+    font-size: 40px;
 }
 
 /* Custom positioning for Carousel Indicators */
 .carousel-indicators {
-  bottom:65px;
+  /*background-color: #c2c2c4; */ /*grey*/
+  bottom: -35px
+}
+
+.carousel-indicators li {
+  background-color: #c2c2c4;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #1919e5; /*blue */
 }
 
 /* Custom styling to centre marketing logo image */
@@ -50,6 +112,12 @@ img.centered {
     margin-left: auto;
     margin-right: auto
   }
+
+.carousel-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
 
 /* Thin out the marketing headings */
 .featurette-heading {
@@ -74,34 +142,13 @@ img.centered {
 </style>
 
 <script>
-var $item = $('.carousel .item');
-var $wHeight = $(window).height();
-$item.eq(0).addClass('active');
-$item.height($wHeight);
-$item.addClass('full-screen');
-
-$('.carousel img').each(function() {
-  var $src = $(this).attr('src');
-  var $color = $(this).attr('data-color');
-  $(this).parent().css({
-    'background-image' : 'url(' + $src + ')',
-    'background-color' : $color
-  });
-  $(this).remove();
-});
-
-$(window).on('resize', function (){
-  $wHeight = $(window).height();
-  $item.height($wHeight);
-});
-
-$('.carousel').carousel({
-  interval: 6000,
-  pause: "false"
-});
+  $('#mycarousel').carousel();
 </script>
 
-<div id="mycarousel" class="carousel slide" data-ride="carousel">
+<div id="startchange">
+<div class="blank-gap-30"></div>
+
+<div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
@@ -111,65 +158,81 @@ $('.carousel').carousel({
     <li data-target="#mycarousel" data-slide-to="4"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item">
-        <img src="images/open-house-building.jpg" data-color="lightblue" alt="First Image">
-        <div class="carousel-caption carousel-heading">
-          <div style="font-family: 'Sofia', cursive;">
-            <h1>Welcome to Open House</h1>
-          </div>
-        </div>
-    </div>
-    <div class="item">
-        <img src="images/outside-office.jpg" data-color="firebrick" alt="Second Image">
-        <div class="carousel-caption carousel-heading">
-          <div style="font-family: 'Sofia', cursive;">
-            <h1>We have space for Everyone</h1>
-          </div>
-        </div>
-    </div>
-    <div class="item">
-        <img src="images/play-group.jpg" data-color="violet" alt="Third Image">
-        <div class="carousel-caption carousel-heading">
-          <div style="font-family: 'Sofia', cursive;">
-            <h1>A real sense of Community</h1>
-          </div>
-        </div>
-    </div>
-    <div class="item">
-        <img src="images/learn-skills.jpg" data-color="lightgreen" alt="Fourth Image">
-        <div class="carousel-caption carousel-heading">
-          <div style="font-family: 'Sofia', cursive;">
-            <h1>Learn some new Skills</h1>
-          </div>
-        </div>
-    </div>
-    <div class="item">
-        <img src="images/fun-for-kids.jpg" data-color="tomato" alt="Fifth Image">
-        <div class="carousel-caption carousel-heading">
-          <div style="font-family: 'Sofia', cursive;">
-            <h1>Fun and Games for the Kids</h1>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="../#mycarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="../#mycarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+       <div class="item active">
+         <img class="first-slide carousel-center" style="opacity: 0.7;" src="images/open-house-building.jpg" alt="First slide" height="480" width="700">
+         <div class="container">
+           <div class="carousel-caption">
+             <div style="font-family: 'Sofia', cursive;">
+               <h1 id="carousel-heading">Welcome to Open House</h1>
+             </div>
+             <!--<p><a class="btn btn-lg btn-primary" href="#hosting" role="button">Learn More</a></p>-->
+             <br>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <img class="second-slide carousel-center" style="opacity: 0.7;" src="images/outside-office.jpg" alt="Second Slide" height="480" width="700">
+         <div class="container">
+           <div class="carousel-caption">
+             <div style="font-family: 'Sofia', cursive;">
+               <h1 id="carousel-heading">We have space for Everyone</h1>
+            <!--<p><a class="btn btn-lg btn-primary" href="#design" role="button">Web Services</a></p>-->
+           </div>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <!--<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">-->
+         <img class="third-slide carousel-center" style="opacity: 0.7;" src="images/play-group.jpg" alt="Third slide" height="480" width="700">
+         <div class="container">
+           <div class="carousel-caption">
+             <div style="font-family: 'Sofia', cursive;">
+               <h1 id="carousel-heading">A real sense of community</h1>
+            <!--<p><a class="btn btn-lg btn-primary" href="#consulting" role="button">Our Services</a></p>-->
+           </div>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <img class="forth-slide carousel-center" style="opacity: 0.7;" src="images/learn-skills.jpg" alt="Forth Slide" height="480" width="700">
+         <div class="container">
+           <div class="carousel-caption">
+             <div style="font-family: 'Sofia', cursive;">
+               <h1 id="carousel-heading">Learn some new skills</h1>
+            <!--<p><a class="btn btn-lg btn-primary" href="#design" role="button">Web Services</a></p>-->
+           </div>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <img class="fifth-slide carousel-center" style="opacity: 0.7;" src="images/fun-for-kids.jpg" alt="Fifth Slide" height="480" width="700">
+         <div class="container">
+           <div class="carousel-caption">
+             <div style="font-family: 'Sofia', cursive;">
+               <h1 id="carousel-heading">Fun and Games for the kids</h1>
+            <!--<p><a class="btn btn-lg btn-primary" href="#design" role="button">Web Services</a></p>-->
+           </div>
+           </div>
+         </div>
+       </div>
+     </div>
 </div>
 
 <div class="blank-gap-30"></div>
 <div class="blank-gap-20"></div>
 
-<div id="startchange">
+<div class="container">
+  <div class="text-center">
+    <h2 style="font-family: 'Raleway', sans-serif;"><b>Open House Christian Involvement Centres</b></h2>
+    <div class="blank-gap-20"></div>
+    <h4 style="font-family: 'Raleway', sans-serif;"><b>Open House</b> is a public benevolent institution, an incorporated Christian community and volunteer based charity, established to provide direct relief of such poverty, sickness, suffering, distress, misfortune, disability or helplessness that arouses compassion within the community through the provision of Christian-motivated, community services.</h4>
+  </div>
+</div>
+
+<div class="blank-gap-30"></div>
+<div class="blank-gap-20"></div>
+
 <!--- ====== NEW CONTENT ========== -->
 <div class="container marketing">
   <div class="row">
@@ -229,3 +292,33 @@ $('.carousel').carousel({
     </div>
   </div>
 </div>
+
+<script>
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel").carousel();
+
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+      $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function(){
+      $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function(){
+      $("#myCarousel").carousel(2);
+  });
+  $(".item4").click(function(){
+      $("#myCarousel").carousel(3);
+  });
+
+  // Enable Carousel Controls
+  /*$(".left").click(function(){
+      $("#myCarousel").carousel("prev");
+  });
+  $(".right").click(function(){
+      $("#myCarousel").carousel("next");
+  });*/
+});
+</script>
+<script src="js/navbar-scroll.js"></script>
