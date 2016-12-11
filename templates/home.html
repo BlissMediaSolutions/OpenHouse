@@ -91,9 +91,8 @@ h2, h3, h4, p {
     font-size: 40px;
 }
 
-/* Custom positioning for Carousel Indicators */
+/* Custom Positioning & Styling for Carousel Indicators */
 .carousel-indicators {
-  /*background-color: #c2c2c4; */ /*grey*/
   bottom: -35px
 }
 
@@ -116,7 +115,7 @@ img.centered {
 .carousel-center {
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 /* Thin out the marketing headings */
@@ -140,9 +139,25 @@ img.centered {
 
 #myImg:hover {opacity: 0.5;}
 </style>
-
+<script src="js/navbar-scroll.js"></script>
 <script>
   $('#mycarousel').carousel();
+</script>
+
+<script>
+/*$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#navbar-xs').css('box-shadow','1px 1px 5px #888888');
+       } else {
+          $('#navbar-xs').css('box-shadow', '0px 0px 0px #888888');
+       }
+   });
+});*/
 </script>
 
 <div id="startchange">
@@ -321,4 +336,3 @@ $(document).ready(function(){
   });*/
 });
 </script>
-<script src="js/navbar-scroll.js"></script>

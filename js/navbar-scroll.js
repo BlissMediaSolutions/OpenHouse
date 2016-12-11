@@ -6,9 +6,9 @@ $(document).ready(function(){
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-        $(".navbar-xs").css('box-shadow', '1px 1px 15px #888888');
+        $(".navbar").css('box-shadow', '1px 1px 15px #888888');
        } else {
-        $(".navbar-xs").css('box-shadow', '0px 0px 0px #888888');
+        $(".navbar").css('box-shadow', '0px 0px 0px #888888');
        }
    });
     }
