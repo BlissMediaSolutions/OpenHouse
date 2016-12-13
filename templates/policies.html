@@ -2,6 +2,44 @@
 
 <style>
 body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 75px;
+  color: #27ace5;
+  font-size: 400%;
+  text-shadow: 1px 1px #ffffff;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+    position: absolute;
+    vertical-align: middle;
+    /*height: 100%;*/
+}
+
+.jumbotron {
+  background-color:transparent !important;
+}
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,21 +58,38 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
-}
+} */
 </style>
 
-<div class="jumbotron jumbotron-custom">
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Our Policies</b></h2>
   </div>
 </div>
 
+
+
+<div class="container"> -->
+
+<div class="blank-gap-30"></div>
+
 <div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+           <div class="carousel-caption text-center"><h1>Our Policies</h1></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="blank-gap-30"></div>
+
   <div class="jumbotron">
     <!--<h3 class="media-heading">Backyard Sports 10-year Anniversary </h3>-->
-    <h5>As an Australian registered Christian charity and public company limited by guarantee Open House has a wide range of policies covering its legal, fiduciary, participant protection, operating and moral responsibilities. </h5>
-    <h5>Each of the policies has been developed after appropriate consultation and consideration. All are approved and signed off by the board of directors and reviewed and or updated regularly. </h5>
-    <h5>All staff, volunteers and in some cases other individuals are required to comply with these policies. </h5>
-    <h5>Where required or appropriate, the Open House policies are displayed publicly. Other policies form part of the operating procedures of the organisation and are available on request. </h5>
+    <p>As an Australian registered Christian charity and public company limited by guarantee Open House has a wide range of policies covering its legal, fiduciary, participant protection, operating and moral responsibilities. </p>
+    <p>Each of the policies has been developed after appropriate consultation and consideration. All are approved and signed off by the board of directors and reviewed and or updated regularly. </p>
+    <p>All staff, volunteers and in some cases other individuals are required to comply with these policies. </p>
+    <p>Where required or appropriate, the Open House policies are displayed publicly. Other policies form part of the operating procedures of the organisation and are available on request. </p>
   </div>
 </div>
