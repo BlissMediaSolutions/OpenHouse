@@ -3,27 +3,26 @@
 <style>
 body {
   font-family: 'Raleway', sans-serif;
-  }
+}
 
-  .blank-gap-10 {
-    width:100%;
-    height:10px;
-  }
-  .blank-gap-20 {
-    width:100%;
-    height:20px;
-  }
-  .blank-gap-30 {
-    width:100%;
-    height:30px;
-  }
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
 
 h1 {
-  font-family: 'Kaushan Script', cursive;
-  padding-bottom: 75px;
-  color: #27ace5;
+  color: #ffffff;
   font-size: 400%;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 2px 2px #9e9e9e;
 }
 
 p {
@@ -31,70 +30,59 @@ p {
 }
 
 .carousel-caption {
-    position: absolute;
-    vertical-align: middle;
-    /*height: 100%;*/
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .jumbotron {
   background-color:transparent !important;
 }
-
-/*.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
-} */
-/*
-#myEvent {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myEvent:hover {opacity: 0.5;}
-
-#myEvent1 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myEvent1:hover {opacity: 0.5;}
-
-#myEvent2 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myEvent2:hover {opacity: 0.5;} */
 </style>
-
-<!--<div class="jumbotron jumbotron-custom">
-  <div class="container">
-    <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Coming Events</b></h2>
-  </div>
-</div>
-
-<div class="container">-->
 
 <div class="blank-gap-30"></div>
 
 <div class="container">
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="item active">
+      <div class="item active">
         <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
-           <div class="carousel-caption text-center"><h1>Coming Events </h1></div>
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+              <div class="col-sm-12 col-center-block">
+                <h1>Coming Events </h1>
+              </div>
+              <div class="col-sm-8 col-center-block">
+                <hr/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
 
 <div class="blank-gap-30"></div>
 <div class="blank-gap-10"></div>

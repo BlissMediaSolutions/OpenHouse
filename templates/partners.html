@@ -2,7 +2,7 @@
 
 <style>
 /* === Custom Styling for Jumbotron Banner === */
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -21,6 +21,67 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
+} */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+/*li {
+  font-size: 125%
+}*/
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 
 /* === Custom Styling for Jumbotron Partner listing === */
@@ -34,38 +95,63 @@ h2 {
 }
 </style>
 
-<div class="jumbotron jumbotron-custom">
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Partners</b></h2>
   </div>
 </div>
 
+<div class="container">-->
+<div class="blank-gap-30"></div>
+
 <div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Partners </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank-gap-30"></div>
   <div class="jumbotron">
-    <h5>We are extremely grateful for the many generous financial donations and the provision of pro bono services received in support of the work of Open House.  In expressing our thanks, we do not list individual personal donations for reasons of both space and anonymity. </h5>
+    <p>We are extremely grateful for the many generous financial donations and the provision of pro bono services received in support of the work of Open House.  In expressing our thanks, we do not list individual personal donations for reasons of both space and anonymity. </p>
   </div>
 </div>
 
-<div class="container">
+<div class="container" style="font-size:115%;">
   <div class="row match-my-cols">
     <div class="col-sm-6">
       <div class="jumbotron">
           <ul class='list-unstyled'>
-            <li><h4><b>Churches and Affiliated Groups </b></h4></li>
-            <li><h5>•	Fairfield Trust – The Properties Corporation of the Churches of Christ</h5></li>
-            <li><h5>•	Gresswell UC – E &#38; R Chalmers Bequest</h5></li>
-            <li><h5>•	St James’ Ivanhoe</h5></li>
-            <li><h5>•	St Johns’ Diamond Creek</h5></li>
-            <li><h5>•	St Michael’s Yarrambat</h5></li>
-            <li><h5>•	St. Katherine’s St. Helena</h5></li>
-            <li><h5>•	Anglican Men’s Society - Bill Brady Organisation</h5></li>
-            <li><h5>•	City Life Manningham</h5></li>
-            <li><h5>•	Planet Shakers North East</h5></li>
-            <li><h5>•	Diamond Valley, Uniting Church</h5></li>
-            <li><h5>•	Gresswell Bundoora/Kingsbury/Watsonia</h5></li>
-            <li><h5>•	Heidelberg/East Ivanhoe – The Sycamore Tree Coffee Shop</h5></li>
-            <li><h5>•	Rosanna – Arden Crescent</h5></li>
-            <li><h5>•	Rosanna – Arden Crescent Concert Committee</h5></li>
+            <li><b>Churches and Affiliated Groups </b></li>
+            <li>•	Fairfield Trust – The Properties Corporation of the Churches of Christ</li>
+            <li>•	Gresswell UC – E &#38; R Chalmers Bequest</li>
+            <li>•	St James’ Ivanhoe</li>
+            <li>•	St Johns’ Diamond Creek</li>
+            <li>•	St Michael’s Yarrambat</li>
+            <li>•	St. Katherine’s St. Helena</li>
+            <li>•	Anglican Men’s Society - Bill Brady Organisation</li>
+            <li>•	City Life Manningham</li>
+            <li>•	Planet Shakers North East</li>
+            <li>•	Diamond Valley, Uniting Church</li>
+            <li>•	Gresswell Bundoora/Kingsbury/Watsonia</li>
+            <li>•	Heidelberg/East Ivanhoe – The Sycamore Tree Coffee Shop</li>
+            <li>•	Rosanna – Arden Crescent</li>
+            <li>•	Rosanna – Arden Crescent Concert Committee</li>
           </ul>
         </div>
       </div>
@@ -73,16 +159,16 @@ h2 {
       <div class="col-sm-6">
         <div class="jumbotron">
             <ul class='list-unstyled'>
-              <li><h4><b>Philanthropic Organisations</b></h4></li>
-              <li><h5>•	First Arthur and Laura Sandland Memorial Foundation</h5></li>
-              <li><h5>•	Gospel Resource</h5></li>
-              <li><h5>•	Iris &#38; Ken Baldwin Foundation</h5></li>
-              <li><h5>•	Lynch Family Trust</h5></li>
-              <li><h5>•	Mona Georgina Harris Perpetual Charitable Trust</h5></li>
-              <li><h5>•	William Angliss (Vic) Charitable Fund</h5></li>
-              <li><h5>•	Sisters of Mercy</h5></li>
-              <li><h5>•	Lord Mayor’s Fund</h5></li>
-              <li><h5>•	The Collie Trust</h5></li>
+              <li><b>Philanthropic Organisations</b></li>
+              <li>•	First Arthur and Laura Sandland Memorial Foundation</li>
+              <li>•	Gospel Resource</li>
+              <li>•	Iris &#38; Ken Baldwin Foundation</li>
+              <li>•	Lynch Family Trust</li>
+              <li>•	Mona Georgina Harris Perpetual Charitable Trust</li>
+              <li>•	William Angliss (Vic) Charitable Fund</li>
+              <li>•	Sisters of Mercy</li>
+              <li>•	Lord Mayor’s Fund</li>
+              <li>•	The Collie Trust</li>
             </ul>
           </div>
         </div>
@@ -92,13 +178,13 @@ h2 {
         <div class="col-sm-6">
           <div class="jumbotron">
             <ul class='list-unstyled'>
-              <li><h4><b>Service Clubs and Community Groups </b></h4></li>
-              <li><h5>•	Rotary Club of Heidelberg</h5></li>
-              <li><h5>•	Rotary Club of Ivanhoe</h5></li>
-              <li><h5>•	Rotary Club of Rosanna</h5></li>
-              <li><h5>•	Royal Society of St George Women’s Group</h5></li>
-              <li><h5>•	Soroptimist International of Deakin</h5></li>
-              <li><h5>•	The Royal Society of St. George</h5></li>
+              <li><b>Service Clubs and Community Groups </b></li>
+              <li>•	Rotary Club of Heidelberg</li>
+              <li>•	Rotary Club of Ivanhoe</li>
+              <li>•	Rotary Club of Rosanna</li>
+              <li>•	Royal Society of St George Women’s Group</li>
+              <li>•	Soroptimist International of Deakin</li>
+              <li>•	The Royal Society of St. George</li>
             </ul>
           </div>
         </div>
@@ -106,20 +192,20 @@ h2 {
         <div class="col-sm-6">
           <div class="jumbotron">
             <ul class='list-unstyled'>
-              <li><h4><b>Business Houses</b></h4></li>
-              <li><h5>•	ARM – architectural services</h5></li>
-              <li><h5>•	Bendigo Bank Community Enterprise Foundation</h5></li>
-              <li><h5>•	Bendigo Bank Heidelberg/East Ivanhoe Community Bank Branches</h5></li>
-              <li><h5>•	Danahers Mitre 10</h5></li>
-              <li><h5>•	Dr Marcus Ford - dentist</h5></li>
-              <li><h5>•	Eaglemont Meats</h5></li>
-              <li><h5>•	Macleod Village Traders (Little Free Libraries)</h5></li>
-              <li><h5>•	McCracken &#38; McCracken – legal services</h5></li>
-              <li><h5>•	Miles Real Estate – Ivanhoe and Rosanna</h5></li>
-              <li><h5>•	Morrison Kleeman Real Estate - Eltham</h5></li>
-              <li><h5>•	Redlec Electrical Services</h5></li>
-              <li><h5>•	Rock Self Storage</h5></li>
-              <li><h5>•	Saward Dawson – auditors</h5></li>
+              <li><b>Business Houses</b></li>
+              <li>•	ARM – architectural services</li>
+              <li>•	Bendigo Bank Community Enterprise Foundation</li>
+              <li>•	Bendigo Bank Heidelberg/East Ivanhoe Community Bank Branches</li>
+              <li>•	Danahers Mitre 10</li>
+              <li>•	Dr Marcus Ford - dentist</li>
+              <li>•	Eaglemont Meats</li>
+              <li>•	Macleod Village Traders (Little Free Libraries)</li>
+              <li>•	McCracken &#38; McCracken – legal services</li>
+              <li>•	Miles Real Estate – Ivanhoe and Rosanna</li>
+              <li>•	Morrison Kleeman Real Estate - Eltham</li>
+              <li>•	Redlec Electrical Services</li>
+              <li>•	Rock Self Storage</li>
+              <li>•	Saward Dawson – auditors</li>
             </ul>
           </div>
         </div>

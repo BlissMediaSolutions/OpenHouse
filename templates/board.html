@@ -2,31 +2,62 @@
 
 <style>
 body {
-  padding-top: 15px;
-  color: #000000;
-  }
-h2 {
-  color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
+  font-family: 'Raleway', sans-serif;
 }
-.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
 }
-/*
-.row.match-my-cols {
-    overflow: hidden;
+.blank-gap-20 {
+  width:100%;
+  height:20px;
 }
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-} */
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
+}
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -38,15 +69,43 @@ h2 {
 </style>
 
 <!-- === Jumbotron Header === -->
-<div class="jumbotron jumbotron-custom">
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Our Board</b></h2>
   </div>
-</div>
+</div>-->
+<div class="blank-gap-30"></div>
+
+<div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Our Board</h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--</div>-->
+
+<div class="blank-gap-30"></div>
+<div class="blank-gap-20"></div>
+
 <!-- === End Header === -->
 
 <!-- === start Container === -->
-<div class="container">
+<!--<div class="container">-->
   <div class="row">
    <div class="col-md-3">
     <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal" src='images/board/DWoods.jpg' alt='...' />
@@ -237,132 +296,3 @@ h2 {
       </div>
   </div> <!-- == End Row === -->
 </div> <!-- === End Container === -->
-
-<!--<div class="container">
-  <div class="row match-my-cols">
-    <div class="col-sm-6">
-      <div class="jumbotron">
-        <div class="media">
-          <div class="media-left media-middle">
-            <a href="">
-              <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-            </a>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">David Wilson Woods OAM - Chairman </h4>
-            <h5><b>Qualifications:</b> FCPA, AGIA</h5>
-            <h5><b>Experience:</b> Founding Director 1975.  Former team member, secretary and treasurer.  Experienced company secretary and accountant.
-	         Mr Woods brings a wealth of wisdom and love for the work and people of Open House. </h5>
-         </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-  <div class="jumbotron">
-    <div class="media">
-      <div class="media-left media-middle">
-                <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-        </div>
-      <div class="media-body">
-        <h4 class="media-heading">Phillip John Sporton </h4>
-        <h5><b>Qualifications:</b> Bachelor of Applied Science (Applied Electronics)</h5>
-        <h5><b>Experience:</b> Former Executive Director, Service Delivery South and West - Telstra </h5>
-	      <h5>Mr Sporton brings management skills and expertise with a heart for the disadvantaged </h5>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="row match-my-cols">
-  <div class="col-sm-6">
-  <div class="jumbotron">
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="">
-        <img class="media-object" src="images/board/female_head.png" style="width:70px" alt="...">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Melanie Anne Lamb </h4>
-        <h5><b>Qualifications:</b> B.Min (Bachelor of Ministries)</h5>
-        <h5><b>Experience:</b> Hospital Chaplain </h5>
-			  <h5>Former staff member January 1990 – December 2000 </h5>
-        <h5>Ms Lamb brings valuable experience and insights from previously working at Open House and a heart to see people grow holistically.</h5>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="col-sm-6">
-  <div class="jumbotron">
-    <div calss="media">
-      <div class="media-left media-middle">
-        <a href="">
-          <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Rex Malcolm Anderson </h4>
-        <h5><b>Qualifications:</b> Retail Financial Trading Certificate</h5>
-        <h5><b>Experience:</b> Thirty three years in the banking industry</h5>
-        <h5>Former Administration &#38; Finance Manager at Open House (2000 – 2009) </h5>
-        <h5>Mr Anderson brings first hand insight and vision into the operations of Open House. </h5>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="row match-my-cols">
-  <div class="col-sm-6">
-  <div class="jumbotron">
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="">
-        <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Michael Francis Donohue </h4>
-        <h5><b>Qualifications:</b> Bachelor of Applied Science (Computer Science) </h5>
-        <h5><b>Experience:</b> Founder and Director of medium sized IT Consulting Company, </h5>
-			  <h5>Former CEO and Country Manager Deutsche Telekom (German Telecom)</h5>
-        <h5>Mr Donohue brings a wealth of experience and knowledge from the commercial world together with an enthusiasm, desire and capacity to help disadvantaged people. </h5>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="col-sm-6">
-  <div class="jumbotron">
-    <div calss="media">
-      <div class="media-left media-middle">
-        <a href="">
-          <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Oscar Ruiz </h4>
-        <h5><b>Qualifications:</b> Diploma of Management, Associate Diploma of Electronic Engineering</h5>
-        <h5><b>Experience:</b> Former Client Solutions Executive (IBM)</h5>
-        <h5>Mr Ruiz brings substantial managerial, computer and personnel skills and has a heart to see the ongoing development of the work so that people’s lives are positively impacted. </h5>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="row match-my-cols">
-  <div class="col-sm-6">
-  <div class="jumbotron">
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="">
-        <img class="media-object" src="images/board/person-man.png" style="width:70px" alt="...">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Paul Burgess - CEO</h4>
-        <h5><b>Qualifications:</b> MA (Applied Theology Family Youth and Community Work) </h5>
-        <h5><b>Experience:</b> Fifteen years experience in ministry to those on the fringe of society working for Churches, Not For Profits and Councils in the UK. </h5>
-      </div>
-    </div>
-  </div>
-</div>
-</div> -->

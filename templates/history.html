@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,21 +20,101 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
+}*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 25%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  vertical-align: middle;
+  line-height: normal; /* restore original line height here */
+  display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 </style>
 
-<div class="jumbotron jumbotron-custom">
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <div id="startchange">
       <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Our History</b></h2>
     </div>
   </div>
 </div>
-
+<div class="container">-->
+<div class="blank-gap-30"></div>
 
 <div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Our History </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank-gap-30"></div>
+
   <div class="jumbotron">
-    <h5><i>“Home is like hell. We have nowhere to go but the pub. Doesn’t anyone care about us?”</i></h5>
+    <p><i><b>“Home is like hell. We have nowhere to go but the pub. Doesn’t anyone care about us?”</b></i></p>
     <p>These angry words of a gang kid in 1971 prompted George Farrington, the leader of a church youth group, to gather a caring group of people around him to see if there was something that could be done to meet the need of troubled, angry and disadvantaged youths who didn’t fit in with the community or the church youth group scene. </p>
     <p>Open House began in 1971 to provide a safe place and positive activities for troubled young people – an alternative to the pub. </p>
     <p>Over the years Open House has grown in many ways to offer opportunities to a diverse range of people. Open House has responded to community needs by providing friendship and support through activities for people (children, youth and adults) who are suffering loneliness, isolation, distress, anxiety, mental illness or struggling with addiction or dysfunction, or those who don’t fit in school or are wrestling with growing up issues. </p>
@@ -44,5 +124,3 @@ h2 {
     <p>We have a large church hall, welcome centre – with full catering facilities, workshops, youth worker offices, and the former manse which we have converted to our administration and meeting centre. We also have large grounds which are being progressively converted into community space – both indoors and outdoors. </p>
   </div>
 </div>
-
-<script src="js/navbar-scroll.js"></script>
