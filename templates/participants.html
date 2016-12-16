@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,19 +20,124 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
+} */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 </style>
 
-<div class="jumbotron jumbotron-custom">
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Participants</b></h2>
   </div>
-</div>
+</div>-->
+<div class="blank-gap-30"></div>
 
-<div class ="container">
+<div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Participants </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank-gap-30"></div>
+
+<!--<div class ="container">-->
   <div class="jumbotron">
-    <h5>.... </h5>
-    <h5>.... </h5>
-    <img id="myImg" class="img-responsive center-block" src="images/Avaition-Program.jpg" alt="Participants images" width="300" height="200">
+    <p class="text-center"><b><i>"Joseph" </i></b></p>
+    <p>Joseph came to Open House two years ago, with low self-esteem. He lacked social skills and struggled with school attendance. He has a medical condition which he freely discussed with staff and participants.</p>
+    <p>Open House put Joseph into its youth mentoring program. Here he developed practical, trade based skills. Over time he became a mentor to other younger participants. His confidence around others, particularly those his own age, multiplied, and he can now communicate ideas and thoughts well. Joseph’s school attendance increased from close to zero, to above 80%. </p>
+    <p>Joseph undertook a two-week work placement as a builder’s labourer, putting the skills he had learned at Open House into practice. He did so well, that his boss offered him a paid job over the school holidays. This lead to Joseph securing an apprenticeship for 2017, just where he wanted to be - in the building industry.  </p>
+  <br>
+  <br>
+    <p class="text-center"><b><i>"Madonna" </i></b></p>
+    <p>Madonna has been coming to Open House for more than two years. She attended school but did not like it – school was just not for her. Through friendship, mentoring, support and involvement in program activities, the youth team encouraged her to stay at college and complete year ten.</p>
+    <p>We have seen a lot of growth in Madonna over the last two years. Recently Open House started working with Madonna on her resume, so that she could look for casual work. After investing time going through the process of developing an effective and attractive resume, and teaching interview skills, Madonna felt that she was ready to approach potential employers. </p>
+    <p>Just before Christmas she secured her first part time, paid position - at a local café. We are so proud of Madonna and believe that she will flourish with this new job opportunity.</p>
+    <p>Madonna has also made another step in the right direction, and been accepted into a TAFE course to study for her ideal job - in hairdressing and beauty. </p>
+  <br>
+  <br>
+    <p class="text-center"><b><i>"Glen" </i></b></p>
+    <p>Glen was a disruption in class, on the rare occasions he attended school, and shortly after commencing the youth mentoring program with Open House he was expelled from college.</p>
+    <p>Glen thought this did not matter as all he wanted to do was to attend a TAFE course and forget about school. The challenge was that he was too young for TAFE. However, through continued mentoring, program activities, and support from the Open House team, he has realised the importance of school, and has attended a full week of introduction classes for 2017.</p>
+    <p>We look forward to telling the rest of Glen’s success story next year, including the joy of seeing him reach his goal of a place at TAFE. </p>
+  <br>
+  <br>
+    <p class="text-center"><b><i>"Moon"</i></b></p>
+    <p>At the start of this year Moon decided to volunteer alongside her friend in the Welcome Café at Open House. </p>
+    <p>She completed her food handling certificate and began preparing and cooking food for the local community every Friday afternoon. </p>
+    <p>Since Moon began at Open House, she has gained confidence in her cooking ability and has learnt from the youth team and other volunteers numerous skills, like planning, time management, and customer service. </p>
+    <p>Through this voluntary work experience at Open House, Moon has been offered an employment position at a local ice creamery. </p>
+  <br>
+    <p class="text-center" style="font-size:110%;"><b><i>Names have been changed to protect identities</i></b></p>
+    <!--<img id="myImg" class="img-responsive center-block" src="images/Avaition-Program.jpg" alt="Participants images" width="300" height="200">-->
   </div>
 </div>
