@@ -2,24 +2,44 @@
 
 <style>
 body {
-  padding-top: 15px;
-  color: #000000;
-  }
-
-h2 {
+  font-family: 'Raleway', sans-serif;
+}
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+h1 {
+  /*font-family: 'Kaushan Script', cursive;
+  padding-bottom: 75px;
   color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
+  font-size: 400%;
+  text-shadow: 1px 1px #ffffff;*/
+
+  color: #ffffff;
+  text-shadow: 2px 2px #9e9e9e;
 }
 
-.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
+p {
+  font-size: 125%;
+}
+.carousel-caption {
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    top: 25%;
+    bottom: 25%;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 
 /* === Custom CSS for Hovering over Image === */
@@ -30,6 +50,38 @@ h2 {
 }
 
 #myImg:hover {opacity: 0.6;}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <!-- === Start Script for Modal Image === -->
@@ -44,19 +96,46 @@ $(function() {
 <!-- === End Script for Modal Image === -->
 
 <!-- === Jumbotron Header start === -->
-<div class="jumbotron jumbotron-custom">
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Young Mothers</b></h2>
   </div>
-</div>
-<!-- === Jumbotron Header start === -->
+</div>-->
+
+<div class="blank-gap-30"></div>
 
 <div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption">
+          <div class="row-fluid">
+            <div class="col-sm-8 col-sm-offset-2 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Young Mothers </h1>
+            </div>
+            <div class="col-sm-8 col-sm-offset-2 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank-gap-30"></div>
+
+<!-- === Jumbotron Header start === -->
+
+<!--<div class="container">-->
   <div class="jumbotron">
-    <h5><b>When: </b>Every Thursday between 10am - 12pm</h5>
-    <h5><b>Where: </b>The Manse Centre, Indoor and Outdoor at Open House</h5>
-    <h5>Every Thursday between 10am and noon, Open House offers a free playgroup for babies, young children and their care givers. We have an indoor – outdoor facility with lots of toys and equipment that children love. </h5>
-    <h5>Most of all it’s a chance for mothers, fathers, grandparents, and other care gives to relax and have a friendly chat while their children play together. </h5>
+    <p><b>When: </b>Every Thursday between 10am - 12pm</p>
+    <p><b>Where: </b>The Manse Centre, Indoor and Outdoor at Open House</p>
+    <p>Every Thursday between 10am and noon, Open House offers a free playgroup for babies, young children and their care givers. We have an indoor – outdoor facility with lots of toys and equipment that children love. </p>
+    <p>Most of all it’s a chance for mothers, fathers, grandparents, and other care gives to relax and have a friendly chat while their children play together. </p>
     <img id="myImg" class="img-responsive center-block pop" src="images/play-group.jpg" alt="Open House Play Group" width="150" height="100">
   </div>
 </div>
