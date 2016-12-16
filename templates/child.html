@@ -2,24 +2,60 @@
 
 <style>
 body {
-  padding-top: 15px;
-  color: #000000;
-  }
-
-h2 {
-  color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
+  font-family: 'Raleway', sans-serif;
 }
 
-.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 
 /* === Custom CSS for Hovering over Image === */
@@ -43,19 +79,44 @@ $(function() {
 </script>
 <!-- === End Script for Modal Image === -->
 
-<!-- === Jumbotron Header Start === -->
-<div class="jumbotron jumbotron-custom">
+<!-- === Page Header Start === -->
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Children and Youth</b></h2>
   </div>
-</div>
-<!-- === Jumbotron Header End === -->
+</div>-->
+<div class="blank-gap-30"></div>
 
 <div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Children and Youth </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank-gap-30"></div>
+<!-- === Page Header End === -->
+
+<!--<div class="container">-->
   <div class="jumbotron">
-    <h5><b>When: </b>.... </h5>
-    <h5><b>Where: </b>.... </h5>
-    <h5>............ </h5>
+    <p><b>When: </b>.... </p>
+    <p><b>Where: </b>.... </p>
+    <p>............ </p>
       <img id="myImg" class="img-responsive center-block pop" src="images/programs/kids_and_youth.jpg" alt="Children and Youth Program" width="150" height="100">
   </div>
 </div>

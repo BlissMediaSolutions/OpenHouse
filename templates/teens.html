@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,6 +20,62 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
+}*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 
 /* === Custom CSS for Hovering over Image === */
@@ -43,21 +99,45 @@ $(function() {
 </script>
 <!-- === End Script for Modal Image === -->
 
-<!-- === Jumbotron Header Start === -->
-<div class="jumbotron jumbotron-custom">
+<!-- === Page Header Start === -->
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Fun 4 Teens</b></h2>
   </div>
-</div>
-<!-- === Jumbotron Header End === -->
+</div>-->
+<div class="blank-gap-30"></div>
 
-<div class ="container">
+<div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Fun 4 Teens </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- === Page Header End === -->
+
+  <div class="blank-gap-30"></div>
+<!--<div class ="container">-->
   <div class="jumbotron">
-    <h5><b>When: </b>.... </h5>
-    <h5><b>Where: </b>.... </h5>
-    <h5>Our popular program include a relaxed Friday afternoon drop in “café like” centre for children, followed by a similar offering for teens in the evening at our Macleod facilities.</h5>
-    <h5>This is a chance for children and teens to unwind after a busy week in a friendly, safe and fun atmosphere. The offering includes tasty cooked light snacks with some healthy fruit. With lots of volunteers and youth workers there is always someone to sit down with for a chat or to see who can perform like NBA superstar Steve Curry at the basketball hoop in the hall. </h5>
-    <h5>A drop off service is offered for those participants needing a safe ride home. </h5>
+    <p><b>When: </b>Every Friday from 3:30pm - 10:30pm </p>
+    <p><b>Where: </b>.... </p>
+    <p>Our popular program include a relaxed Friday afternoon drop in “café like” centre for children, followed by a similar offering for teens in the evening at our Macleod facilities.</p>
+    <p>This is a chance for children and teens to unwind after a busy week in a friendly, safe and fun atmosphere. The offering includes tasty cooked light snacks with some healthy fruit. With lots of volunteers and youth workers there is always someone to sit down with for a chat or to see who can perform like NBA superstar Steve Curry at the basketball hoop in the hall. </p>
+    <p>A drop off service is offered for those participants needing a safe ride home. </p>
     <img id="myImg" class="img-responsive center-block pop" src="images/programs/fun_for_teens.jpg" alt="Fun 4 Teens Program" width="150" height="100">
   </div>
 </div>

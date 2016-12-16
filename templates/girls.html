@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,6 +20,62 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
+} */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 
 /* === Custom CSS for Hovering over Image === */
@@ -43,24 +99,48 @@ $(function() {
 </script>
 <!-- === End Script for Modal Image === -->
 
-<!-- === Jumbotron Header Start === -->
-<div class="jumbotron jumbotron-custom">
+<!-- === Page Header Start === -->
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Fun 4 Girls</b></h2>
   </div>
-</div>
-<!-- === Jumbotron Header End === -->
+</div>-->
+<div class="blank-gap-30"></div>
 
-<div class ="container">
+<div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Fun 4 Girls </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- === Page Header End === -->
+
+<div class="blank-gap-30"></div>
+<!--<div class ="container">-->
   <div class="jumbotron">
-    <h5><b>When: </b>.... </h5>
-    <h5><b>Where: </b>.... </h5>
-    <h5>Open House runs an after school program on Mondays for primary aged boys and girls. The program starts in the hall, for example, with a game of dodgeball. Later the groups split into two for special activities.</h5>
-    <h5>Often the boys and girls lack suitable parent role models in their lives. Open House provides mentors for them. Children get to experience, in groups of six or seven, fun, friendship and people who take a real interest in them as individuals. </h5>
-    <h5>The program includes fun activities, like learning how to track in the bush, cooking pancakes on an open fire, team games, crafts and park events. </h5>
-    <h5>A highlight in 2016 was a visit by the local police who talked about their roles and answered the many questions the children had. Open House plays an important role in building positive mindsets for the children early in their development about the police.  </h5>
-    <h5>We provide the girls an opportunity to develop new friendships and skills with an emphasis on friendship and teamwork, e.g., sharing and rejoicing about what has been happening in the last week and encouraging success. All participants also have some personal craft or workshop projects which they complete.</h5>
-    <h5>Open House equips the children on the program with life skills, like manners, proper diet, coping, problem solving and good family relationships.  </h5>
+    <p><b>When: </b>Every Monday from 4:00pm - 5:30pm </p>
+    <p><b>Where: </b>.... </p>
+    <p>Open House runs an after school program on Mondays for primary aged boys and girls. The program starts in the hall, for example, with a game of dodgeball. Later the groups split into two for special activities.</p>
+    <p>Often the boys and girls lack suitable parent role models in their lives. Open House provides mentors for them. Children get to experience, in groups of six or seven, fun, friendship and people who take a real interest in them as individuals. </p>
+    <p>The program includes fun activities, like learning how to track in the bush, cooking pancakes on an open fire, team games, crafts and park events. </p>
+    <p>A highlight in 2016 was a visit by the local police who talked about their roles and answered the many questions the children had. Open House plays an important role in building positive mindsets for the children early in their development about the police.  </p>
+    <p>We provide the girls an opportunity to develop new friendships and skills with an emphasis on friendship and teamwork, e.g., sharing and rejoicing about what has been happening in the last week and encouraging success. All participants also have some personal craft or workshop projects which they complete.</p>
+    <p>Open House equips the children on the program with life skills, like manners, proper diet, coping, problem solving and good family relationships.  </p>
     <img id="myImg" class="img-responsive center-block pop" src="images/programs/fun_for_girls.jpg" alt="Fun 4 Girls Program" width="100" height="150">
   </div>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,8 +20,63 @@ h2 {
   -webkit-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   color: #FFF; // change text color
+}*/
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
+}
 /* === Custom CSS for Hovering over Image === */
 #myImg {
     border-radius: 2px;
@@ -43,21 +98,44 @@ $(function() {
 </script>
 <!-- === End Script for Modal Image === -->
 
-<!-- === Jumbotron Header Start === -->
-<div class="jumbotron jumbotron-custom">
+<!-- === Page Header Start === -->
+<!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Backyard Sports</b></h2>
   </div>
-</div>
-<!-- === Jumbotron Header End === -->
+</div>-->
+<div class="blank-gap-30"></div>
 
-<div class ="container">
+<div class="container">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Backyard Sports </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- === Page Header End === -->
+<div class="blank-gap-30"></div>
+<!--<div class ="container">-->
   <div class="jumbotron">
-    <h5><b>When: </b>.... </h5>
-    <h5><b>Where: </b>.... </h5>
-    <h5>Every Thursday after school Open House’s youth workers run a popular outdoor games session for 30 or more boys and girls in a local park – the Malahan Reserve. It’s all about having fun in a safe environment and everyone is welcome. Games include soccer, footie, basketball and more.</h5>
-    <h5>Our program provides youths with an opportunity to get out of the house, away from television and computer screens, and something healthy and fun to look forward to.</h5>
-    <h5>Some participants, once they experienced the friendly nature of our offering, later found their way to on site programs at our Macleod facilities.</h5>
+    <p><b>When: </b>Every Thursday 3:45pm - 5:15pm </p>
+    <p><b>Where: </b>Malahang Reserve </p>
+    <p>Every Thursday after school Open House’s youth workers run a popular outdoor games session for 30 or more boys and girls in a local park – the Malahan Reserve. It’s all about having fun in a safe environment and everyone is welcome. Games include soccer, footie, basketball and more.</p>
+    <p>Our program provides youths with an opportunity to get out of the house, away from television and computer screens, and something healthy and fun to look forward to.</p>
+    <p>Some participants, once they experienced the friendly nature of our offering, later found their way to on site programs at our Macleod facilities.</p>
     <img id="myImg" class="img-responsive center-block pop" src="images/programs/backyard-sports.jpg" alt="Backyard Sports Program" width="150" height="100">
   </div>
 </div>
