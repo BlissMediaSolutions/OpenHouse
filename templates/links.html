@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-body {
+/*body {
   padding-top: 15px;
   color: #000000;
   }
@@ -20,43 +20,118 @@ h2 {
     -webkit-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     color: #FFF; // change text color
+}*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  /* Custom Styling for Blank Lines of different Widths */
+.blank-gap-10 {
+  width:100%;
+  height:10px;
+}
+.blank-gap-20 {
+  width:100%;
+  height:20px;
+}
+.blank-gap-30 {
+  width:100%;
+  height:30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+
+p {
+  font-size: 125%;
+}
+
+.carousel-caption {
+  position: absolute;
+   top: 25%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 100%;
+   vertical-align: middle;
+   line-height: normal; /* restore original line height here */
+   display: inline-block;
+}
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color:transparent !important;
 }
 </style>
 
-<div class="jumbotron jumbotron-custom">
-  <div class="container">
-    <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Useful Links</b></h2>
-  </div>
-</div>
-
-<!--<div class="container">
-    <h1 class="text-center"><b>Useful Links</b></h1>
-    <br>
-</div>-->
+<div class="blank-gap-30"></div>
 
 <div class="container">
-  <div class="jumbotron">
-    <h3>Banyule City Council Services</h3>
-    <p><h5><i>The Banyule Council provides numerous services to its community. These services will be used by everybody in the community during different stages of their lives. These range from services for the very young (maternal and child health care and child care) through to support services for our senior citizens (delivered meals and home care services).</i></h5></p>
-    <ul class='list-unstyled'>
-      <li><a href='http://www.banyule.vic.gov.au/'>Banyule City Council – Home Page</a></li>
-      <li><a href='http://www.banyule.vic.gov.au/Services'>Banyule City Council – Services for You</a></li>
-      <li><a href='http://www.banyule.vic.gov.au/Services/Community-Services/Older-People/Home-and-Community-Care-HACC-Services'>Banyule City Council – Aged and Disability Services (Home and Community Care – HACC)</a></li>
-      <li><a href='http://www.banyuleyouth.com/programs'>Banyule City Council – Youth Programs</a></li>
-      <li><a href='http://www.banyule.vic.gov.au/Services/Diverse-Communities-and-Social-Inclusion/People-with-Disability/Support-Services'>Banyule City Council – Disability Support Services</a></li>
-      <li><a href='http://www.banyule.vic.gov.au/Services/Diverse-Communities-and-Social-Inclusion/People-with-Disability/Support-Services#Advocacy'>Banyule City Council – Disability Advocacy</a></li>
-    </ul>
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <div class="carousel-caption flex">
+          <div class="row">
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+            <div class="col-sm-12 col-center-block">
+              <h1>Useful Links </h1>
+            </div>
+            <div class="col-sm-8 col-center-block">
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <br>
-  <div class="jumbotron">
-    <h3>Emergency Help / Services</h3>
-    <ul class='list-unstyled'>
-      <li><a href='https://www.lifeline.org.au/'>Life Line</a></li>
-      <li><a href='https://www.beyondblue.org.au/'>Beyond Blue</a></li>
-      <li><a href='http://www.police.vic.gov.au/'>Victoria Police</a></li>
-      <li><a href='http://www.ambulance.vic.gov.au/'>Ambulance Victoria</a></li>
-      <li><a href='http://www.cfa.vic.gov.au/'>Country Fire Authority (CFA)</a></li>
-      <li><a href='http://delwp.vic.gov.au/'>Department of Environment, Land, Water and Planning (DELWP)</a></li>
-    </ul>
-  </div>
+
+  <div class="blank-gap-30"></div>
+
+    <div class="jumbotron">
+      <p><b>Banyule City Council Services</b></p>
+      <p style="font-size:115%">The Banyule Council provides numerous services to its community. These services will be used by everybody in the community during different stages of their lives. These range from services for the very young (maternal and child health care and child care) through to support services for our senior citizens (delivered meals and home care services).</p>
+      <ul class='list-unstyled' style="font-size:115%;">
+        <li><a href='http://www.banyule.vic.gov.au/'><b>Banyule City Council – Home Page</a></li>
+        <li><a href='http://www.banyule.vic.gov.au/Services'>Banyule City Council – Services for You</a></li>
+        <li><a href='http://www.banyule.vic.gov.au/Services/Community-Services/Older-People/Home-and-Community-Care-HACC-Services'>Banyule City Council – Aged and Disability Services (Home and Community Care – HACC)</a></li>
+        <li><a href='http://www.banyuleyouth.com/programs'>Banyule City Council – Youth Programs</a></li>
+        <li><a href='http://www.banyule.vic.gov.au/Services/Diverse-Communities-and-Social-Inclusion/People-with-Disability/Support-Services'>Banyule City Council – Disability Support Services</a></li>
+        <li><a href='http://www.banyule.vic.gov.au/Services/Diverse-Communities-and-Social-Inclusion/People-with-Disability/Support-Services#Advocacy'>Banyule City Council – Disability Advocacy</b></a></li>
+      </ul>
+
+    <div class="blank-gap-30"></div>
+
+      <p><b>Emergency Help / Services</b></p>
+      <ul class='list-unstyled' style="font-size:115%;">
+        <li><a href='https://www.lifeline.org.au/'><b>Life Line</a></li>
+        <li><a href='https://www.beyondblue.org.au/'>Beyond Blue</a></li>
+        <li><a href='http://www.police.vic.gov.au/'>Victoria Police</a></li>
+        <li><a href='http://www.ambulance.vic.gov.au/'>Ambulance Victoria</a></li>
+        <li><a href='http://www.cfa.vic.gov.au/'>Country Fire Authority (CFA)</a></li>
+        <li><a href='http://delwp.vic.gov.au/'>Department of Environment, Land, Water and Planning (DELWP)</b></a></li>
+      </ul>
+
+      <div class="blank-gap-30"></div>
+
+      <a href="documents/Banyule Nillumbik Community Referal Poster-2016.pdf" target="_blank"><li class="fa fa-file-text"><span style="font-family: 'Raleway', sans-serif; font-size:125%"><b> Download the Community Services Contact List</b></span></li></a>
+
+    </div>
 </div>
