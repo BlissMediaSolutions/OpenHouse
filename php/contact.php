@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit']))
+// if(isset($_POST['submit']))
 {
 $message=
 'First Name:	'.$_POST['firstname'].'<br />
@@ -8,7 +8,7 @@ Phone:	'.$_POST['phone'].'<br />
 Email:	'.$_POST['emailid'].'<br />
 Comments:	'.$_POST['message'].'
 ';
-    require "php/class.phpmailer.php"; //include phpmailer class
+    require_once ("class.phpmailer.php"); //include phpmailer class
 
     // Instantiate Class
     $mail = new PHPMailer();
@@ -23,7 +23,7 @@ Comments:	'.$_POST['message'].'
 
     // Authentication
     $mail->Username   = "webmaster@openhousecic.org.au"; // Your full Gmail address
-    $mail->Password   = "*******"; // Your Gmail password
+    $mail->Password   = "AD624or325"; // Your Gmail password
 
     // Compose
     $mail->SetFrom($_POST['emailid'], $_POST['firstname'], $_POST['lastname']);
