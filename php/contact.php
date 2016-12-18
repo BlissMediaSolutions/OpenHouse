@@ -17,13 +17,13 @@ Comments:	'.$_POST['message'].'
     $mail->IsSMTP();                // Sets up a SMTP connection
     $mail->SMTPAuth = true;         // Connection with the SMTP does require authorization
     $mail->SMTPSecure = "ssl";      // Connect using a TLS connection
-    $mail->Host = "smtp.gmail.com";  //Gmail SMTP server address
+    $mail->Host = "smtp-relay.gmail.com";  //Gmail SMTP server address
     $mail->Port = 465;  //Gmail SMTP port
     $mail->Encoding = '7bit';
 
     // Authentication
     $mail->Username   = "webmaster@openhousecic.org.au"; // Your full Gmail address
-    $mail->Password   = "AD624or325"; // Your Gmail password
+    $mail->Password   = "*******"; // Your Gmail password
 
     // Compose
     $mail->SetFrom($_POST['emailid'], $_POST['firstname'], $_POST['lastname']);

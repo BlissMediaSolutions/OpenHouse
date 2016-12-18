@@ -8,7 +8,7 @@ h1 {
   border-top-right-radius: 10px;
 }
 
-h2, h3, h4, p {
+h1, h2, h3, h4, p {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -85,8 +85,8 @@ h2, h3, h4, p {
 
 /* Custom styling for Carousel Text */
 #carousel-heading {
-    color: #27ace5;
-    text-shadow: 1px 1px #000000;
+    color: #ffffff;
+    text-shadow: 2px 1px #0f0f0f;
     font-weight: bold;
     font-size: 40px;
 }
@@ -139,28 +139,13 @@ img.centered {
 
 #myImg:hover {opacity: 0.5;}
 </style>
-<script src="js/navbar-scroll.js"></script>
+
+<!--<script src="js/navbar-scroll.js"></script>-->
 <script>
   $('#mycarousel').carousel();
 </script>
 
-<script>
-/*$(document).ready(function(){
-   var scroll_start = 0;
-   var startchange = $('#startchange');
-   var offset = startchange.offset();
-   $(document).scroll(function() {
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#navbar-xs').css('box-shadow','1px 1px 5px #888888');
-       } else {
-          $('#navbar-xs').css('box-shadow', '0px 0px 0px #888888');
-       }
-   });
-});*/
-</script>
-
-<div id="startchange">
+<!--<div id="startchange">-->
 <div class="blank-gap-30"></div>
 
 <div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -178,9 +163,9 @@ img.centered {
          <img class="first-slide carousel-center" style="opacity: 0.8;" src="images/open-house-building.jpg" alt="First slide" height="480" width="700">
          <div class="container">
            <div class="carousel-caption">
-             <div style="font-family: 'Kaushan Script', cursive;">
+             <!--<div style="font-family: 'Kaushan Script', cursive;">-->
                <h1 id="carousel-heading">Welcome to Open House</h1>
-             </div>
+             <!--</div>-->
              <!--<p><a class="btn btn-lg btn-primary" href="#hosting" role="button">Learn More</a></p>-->
              <br>
            </div>
