@@ -63,7 +63,7 @@ h1 {
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/Contact.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
@@ -123,11 +123,26 @@ h1 {
 <!-- ========= START CONTACT FORM ========== -->
 <div class="blank-gap-10"></div>
 
+<script type="text/javascript">
+   $(document).ready(function(){
+          $('#submit').click(function(){
+               $.ajax({
+                     type: "POST",
+                     url: "php/contact.php",
+                     data: {"firstname": firstname, "lastname": lastname, "phone": phone, "emailid": emailid, "message": message},
+                     success: alert("Thankyou for contacting us, we will respond as soon as possible")
+                     //success: function(msg){
+                      //document.getElementById("Div_Where_you_want_the_response").innerHTML = msg                         }
+                   })
+          });
+      });
+</script>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
               <div class="well well-sm">
-                  <form class="form-horizontal" method="post" action="php/contact.php">
+                  <form class="form-horizontal" method="post"> <!-- action="php/contact.php">-->
                       <fieldset>
                           <legend class="text-center header">Send us a Message</legend>
 
@@ -167,7 +182,7 @@ h1 {
 
                           <div class="form-group">
                               <div class="col-md-12 text-center">
-                                  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                  <button type="submit" id="submit" class="btn btn-primary btn-lg">Submit</button>
                               </div>
                           </div>
                       </fieldset>

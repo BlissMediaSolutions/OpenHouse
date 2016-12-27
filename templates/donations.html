@@ -100,6 +100,34 @@ p {
 
   <div class="jumbotron">
     <p><b>We are currently seeking funds for the following specific projects for which we would love your assistance, either for the whole sum or in part:</b></p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><br />
+    <input type="hidden" name="cmd" value="_donations"><br />
+    <!-- Replace "business" value with your PayPal Email Address or Account ID --><br />
+    <input type="hidden" name="business" value="your email address"><br />
+    <input type="hidden" name="lc" value="US"><br />
+    <!--<input type="visible" name="item_name" value="Widget Fund"><br />-->
+    <select value="Your Donation Amount">
+      <option value="$10">10</option>
+      <option value="$50">50</option>
+      <option value="$100">100</option>
+      <option value="$200">200</option
+    </select>
+    <input type="hidden" name="item_number" value="W-001"><br />
+    <input type="hidden" name="no_note" value="0"><br />
+    <input type="hidden" name="cn" value="Add special instructions to the seller:"><br />
+    <input type="hidden" name="no_shipping" value="2"><br />
+    <input type="visible" name="currency_code" value="USD"><br />
+    <!-- --><br />
+    Please enter your donation amount: (Example - 10.00)&nbsp;&nbsp;&nbsp;&nbsp;<br />
+    <input type="text" name="amount" size="5"><br />
+    <br><br><br />
+    <!-- --><br />
+    <input type="visible" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"><br />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><br />
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"><br />
+    </form>
+
+
     <div class="thumbnail">
       <img src="images/donations/fundraising-level.png" alt="" class="center-block img-responsive" style="opacity: 0.2;">
       <!--<div class="wrapper">-->

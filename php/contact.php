@@ -4,6 +4,9 @@
   // http://stackoverflow.com/questions/16048347/send-email-using-gmail-smtp-server-through-php-mailer
   // Note: Angular or AJAX should be used on the front end to execute the PHP Script.
 
+  ini_set('display_errors', 'On');
+  error_reporting(E_ALL | E_STRICT);
+
   require_once ("class.phpmailer.php");   // Include phpmailer class
 
   $message=
@@ -23,11 +26,11 @@
   $mail->Port = 465; // Port 465 as we're using SSL... or use Port 587 for TLS
   $mail->IsHTML(true);                               // We're sending a HTML formatted message
   $mail->Username = "webmaster@openhousecic.org.au"; // Gmail account for authentication
-  $mail->Password = "*********";                     // Gmail password for authentication
+  $mail->Password = "AD624or325";                     // Gmail password for authentication
   $mail->SetFrom("webmaster@openhousecic.org.au");   // The email is being sent from this address
   $mail->Subject = "Website Contact Form Enquiry";   // The subject line of the email
   $mail->Body = ($message);                          // The actual email message to be sent
-  $mail->AddAddress("office@openhousecic.org.au"); // The email is being sent to this address
+  $mail->AddAddress("webmaster@openhousecic.org.au"); // The email is being sent to this address
 
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
