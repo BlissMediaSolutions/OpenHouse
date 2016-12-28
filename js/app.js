@@ -38,9 +38,9 @@ app.config(function ($routeProvider) {
     }).when("/who", {
 //        controller: 'whoController',
         templateUrl: "templates/who.html"
-    }).when("/history", {
+    }).when("/origins", {
 //      controller: 'historyController',
-      templateUrl: "templates/history.html"
+      templateUrl: "templates/origins.html"
     }).when("/ourhistory", {
 //      controller: 'ourhistoryController',
       templateUrl: "templates/ourhistory.html"

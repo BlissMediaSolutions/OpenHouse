@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 
 <style>
-/*body {
-  padding-top: 15px;
-  color: #000000;
-  }
-
-h2 {
-  color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
-}
-
-.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
-}*/
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -79,6 +59,23 @@ p {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  jQuery("#nanoGallery2").nanoGallery({
+      userID:'146218711@N02',kind:'flickr',thumbnailWidth:'auto',thumbnailHeight:160,  //110,
+      viewerDisplayLogo:true,
+      locationHash:false,
+			thumbnailHoverEffect:[{'name':'labelSlideUp','duration':300}],
+			thumbnailLabel:{display:true,position:'overImageOnBottom',descriptionMaxLength:50},
+      thumbnailLazyLoad:true,
+      theme:'clean',
+      colorScheme:'light',
+      locationHash: false,
+      level1: { thumbnailWidth: 200, thumbnailHeight: 120 }
+		});
+});
+</script>
+
 <!--<div class="jumbotron jumbotron-custom">
   <div class="container">
     <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Photos</b></h2>
@@ -89,14 +86,14 @@ p {
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/photos.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
               <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <h1>Photos </h1>
+              <h1>Our Photos </h1>
             </div>
             <div class="col-sm-8 col-center-block">
               <hr/>
@@ -106,6 +103,8 @@ p {
       </div>
     </div>
   </div>
-</div>
+<!--</div>-->
 
-<div class="blank-gap-30"></div>
+  <div class="blank-gap-30"></div>
+  <div id="nanoGallery2"></div>
+</div>
