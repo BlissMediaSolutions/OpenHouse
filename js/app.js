@@ -110,6 +110,9 @@ app.config(function ($routeProvider) {
     }).when("/mens", {
 //      controller: 'mensController',
       templateUrl: "templates/mens.html"
+    }).when("/individual", {
+//      controller: 'individualController',
+      templateUrl: "templates/individual.html"
     }).when("/meal", {
 //      controller: 'mealController',
       templateUrl: "templates/meal.html"
