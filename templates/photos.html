@@ -65,8 +65,10 @@ $(document).ready(function () {
       userID:'146218711@N02',kind:'flickr',thumbnailWidth:'auto',thumbnailHeight:160,  //110,
       viewerDisplayLogo:true,
       locationHash:false,
-			thumbnailHoverEffect:[{'name':'labelSlideUp','duration':300}],
-			thumbnailLabel:{display:true,position:'overImageOnBottom',descriptionMaxLength:50},
+			//thumbnailHoverEffect:[{'name':'labelSlideUp','duration':300}],
+			//thumbnailLabel:{display:true,position:'overImageOnBottom',descriptionMaxLength:50},
+      thumbnailLabel:{ display:false}, //Just added
+      thumbnailL1Label:{title:'%filenameNoExt', itemsCount:'title', display:true}, //Just added
       thumbnailLazyLoad:true,
       theme:'clean',
       colorScheme:'light',
