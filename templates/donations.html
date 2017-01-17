@@ -22,7 +22,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -71,7 +71,84 @@ p {
   left:0;
   position: absolute;
 }
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
+
+<script>
+  document.getElementById("txt-input").disabled = true;
+  document.getElementById("a3-text").disabled = true;
+  document.getElementById("a3-radio-1").checked = true;
+
+  document.getElementById("radio-4").onclick = function() {
+    document.getElementById("txt-input").disabled = false;
+  }
+
+  document.getElementById("radio-1").onclick = function() {
+    document.getElementById("txt-input").disabled = true;
+  }
+
+  document.getElementById("radio-2").onclick = function() {
+    document.getElementById("txt-input").disabled = true;
+  }
+
+  document.getElementById("radio-3").onclick = function() {
+    document.getElementById("txt-input").disabled = true;
+  }
+
+  document.getElementById("a3-radio-6").onclick = function() {
+    document.getElementById("a3-text").disabled = false;
+  }
+
+  document.getElementById("a3-radio-1").onclick = function() {
+    document.getElementById("a3-text").disabled = true;
+  }
+
+  document.getElementById("a3-radio-2").onclick = function() {
+    document.getElementById("a3-text").disabled = true;
+  }
+
+  document.getElementById("a3-radio-3").onclick = function() {
+    document.getElementById("a3-text").disabled = true;
+  }
+
+  document.getElementById("a3-radio-4").onclick = function() {
+    document.getElementById("a3-text").disabled = true;
+  }
+
+  document.getElementById("a3-radio-5").onclick = function() {
+    document.getElementById("a3-text").disabled = true;
+  }
+</script>
 
 <div class="blank-gap-30"></div>
 
@@ -79,14 +156,14 @@ p {
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/donations.png" alt="" class="center-block img-responsive" style="opacity: 0.8;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
               <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <h1>Donations </h1>
+              <h1><strong>Donations </strong></h1>
             </div>
             <div class="col-sm-8 col-center-block">
               <hr/>
@@ -99,46 +176,23 @@ p {
   <div class="blank-gap-30"></div>
 
   <div class="jumbotron">
-    <p><b>We are currently seeking funds for the following specific projects for which we would love your assistance, either for the whole sum or in part:</b></p>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><br />
-    <input type="hidden" name="cmd" value="_donations"><br />
-    <!-- Replace "business" value with your PayPal Email Address or Account ID --><br />
-    <input type="hidden" name="business" value="your email address"><br />
-    <input type="hidden" name="lc" value="US"><br />
-    <!--<input type="visible" name="item_name" value="Widget Fund"><br />-->
-    <select value="Your Donation Amount">
-      <option value="$10">10</option>
-      <option value="$50">50</option>
-      <option value="$100">100</option>
-      <option value="$200">200</option
-    </select>
-    <input type="hidden" name="item_number" value="W-001"><br />
-    <input type="hidden" name="no_note" value="0"><br />
-    <input type="hidden" name="cn" value="Add special instructions to the seller:"><br />
-    <input type="hidden" name="no_shipping" value="2"><br />
-    <input type="visible" name="currency_code" value="USD"><br />
-    <!-- --><br />
-    Please enter your donation amount: (Example - 10.00)&nbsp;&nbsp;&nbsp;&nbsp;<br />
-    <input type="text" name="amount" size="5"><br />
-    <br><br><br />
-    <!-- --><br />
-    <input type="visible" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"><br />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><br />
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"><br />
-    </form>
+    <div class="text-center">
+      <p style="color:red;"><b>All donations of $2.00 and over are Tax Deductible.</b></p>
+      <p><b>We are currently seeking funds for the following specific projects for which we would love your assistance, either for the whole sum or in part:</b></p>
+    </div>
 
-
-    <div class="thumbnail">
-      <img src="images/donations/fundraising-level.png" alt="" class="center-block img-responsive" style="opacity: 0.2;">
-      <!--<div class="wrapper">-->
-        <div class="caption post-content">
-          <div class="blank-gap-10"></div>
+        <div class="blank-gap-10"></div>
           <div class="media">
             <div class="media-left media-middle">
-              <img class="media-object" src="images/donations/solar panel.png" alt="..." width="128" height="128">
+              <img class="media-object" src="images/donations/solar panel.png" alt="..." width="85" height="85">
             </div>
             <div class="media-body">
-              <h3 class="media-heading"><b>Solar panels with 10kw of power ~ $15,900 </b></h3>
+              <h3 class="media-heading"><b>Solar panels with 10kw of power ~ $15,900 </b><span style= "float:left;"><form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="RNRDE9T3Y4XC6">
+                <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+              </form></span></h3>
               <p>This project will enable us to reduce our annual power bills, become self-sufficient, environment friendly, and to future proof Open House in terms of ever rising energy costs.</p>
             </div>
           </div>
@@ -146,24 +200,31 @@ p {
           <div class="blank-gap-20"></div>
           <div class="media">
             <div class="media-left media-middle">
-              <img class="media-object" src="images/donations/pool-table-icon.png" alt="..." width="128" height="128">
+              <img class="media-object" src="images/donations/workshop-icon.png" alt="..." width="85" height"85">
             </div>
             <div class="media-body">
-              <h3 class="media-heading"><b>Pool table, Cove and Trolley ~ $3,000 </b></h3>
-              <p>A pool table is well known as one of the best way to attract and encourage youth to attend programs. We would like to purchase a long lasting, quality table, that can be both covered and wheeled away when not in use.</p>
+              <h3 class="media-heading"><b>Adult Workshop ~ $1,000 </b><span style= "float:left;"><form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="UBRWFKG9W5YK4">
+                <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+              </form></span></h3>
+              <p>We are looking at starting up a workshop for adults and need some equipment for use by participants and would welcome a donation to cover the $2,000 cost.</p>
             </div>
           </div>
 
-          <div class="blank-gap-20"></div>
+          <div class-"blank-gap-20"></div>
           <div class="media">
             <div class="media-left media-middle">
-              <img class="media-object" src="images/donations/workshop-icon.png" alt="..." width="128" height"128">
-              <!--<p></p>
-              <img class="media-object" src="images/donations/coffee-icon.png" alt="..." width="128" height="128">-->
+              <img class="media-object" src="images/donations/coffee-icon.png" alt"Cafe Equipment" width="85" height="85">
             </div>
             <div class="media-body">
-              <h3 class="media-heading"><b>Adult Workshop and Café Equipment ~ $2,000 </b></h3>
-              <p>We are looking at starting up a workshop for adults and need some equipment for use by participants and would welcome a donation to cover the $2,000 cost.</p>
+              <h3 class="media-heading"><b>Cafe Equipment ~ $1,000 </b><span style="float:left;"><form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="EH6D9GQMNPJFG">
+                <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+              </form></span></h3>
               <p>As we look to outreach locally, but away from our Macleod base – to parks, shopping centres and other remote locations where youth congregate we need to acquire some café equipment and seek a donation of $2,000 to assist with this. And the equipment will be pressed into immediate use!  </p>
             </div>
           </div>
@@ -171,20 +232,110 @@ p {
           <div class="blank-gap-20"></div>
           <div class="media">
             <div class="media-left media-middle">
-              <img class="media-object" src="images/donations/paper icon.png" alt"..." width="128" height="128">
+              <img class="media-object" src="images/donations/support-icon.png" alt="..." width="85" height="85">
             </div>
             <div class="media-body">
-              <h3 class="media heading"><b>Bequests </b></h3>
-              <p>We are grateful to those donors who have in the past remembered open house in their estate planning.
-                Bequests to open house contribute significantly to our long term financial well-being and help ensure the success of our
-                many programs on an ongoing basis.</p>
-              <p>Naming open house in your will is not difficult and you can designate any amount of your estate that you wish.</p>
-              <p>As you make plans for your estate we hope that you will remember a request to us. </p>
+              <h3 class="media-heading"><b>Support A Participant </b><span style= "float:left"><form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="RT9SUPSWSCM7S">
+                <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+              </form></span></h3>
+              <p>A pool table is well known as one of the best way to attract and encourage youth to attend programs. We would like to purchase a long lasting, quality table, that can be both covered and wheeled away when not in use.</p>
             </div>
           </div>
-          <p><b>For more information on bequests and other gifts to open house please contact our reception on 9450-7600</b></p>
+
+          <div class="blank-gap-20"></div>
+          <div class="row">
+            <div class="col-sm-10 col-center-block">
+              <div class="well well-sm">
+                <fieldset>
+                    <legend class="text-center header"><strong>Ongoing Donations</strong></legend>
+                </fieldset>
+                  <div class="text-center">
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+
+                      <!-- Identify your business so that you can collect the payments. -->
+                      <input type="hidden" name="business" value="pburgess@openhousecic.org.au">
+
+                      <!-- Specify a Subscribe button. -->
+                      <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                      <!-- Identify the subscription. -->
+                      <label for="item_name" style="font-size: 135%;">Direct Donation to:</br>
+                        <input type="radio" id="radio-1" name="item_name" checked="checked" value="General Purpose"><label>General Purpose </Label>
+                        <input type="radio" id="radio-2" name="item_name" value="Youth"><label>Youth Programs </label>
+                        <input type="radio" id="radio-3" name="item_name" value="Adult"><label>Adult Programs </label>
+                        <input type="radio" id="radio-4" name="item_name" value="">
+                        <input type="text" id="txt-input" name="item_name" size="12" placeholder="Specify use">
+                      </label>
+                      <br>
+                      <input type="hidden" name="item_number" value="Youth Programs">
+                      <br>
+                      <!-- Set the terms of the regular subscription. -->
+                      <input type="hidden" name="currency_code" value="AUD">
+                      <label for="a3" style="font-size: 135%;">Donation Amount:<br>
+                        <input type="radio" id="a3-radio-1" name="a3" value="$10"><label>$10 </label>
+                        <input type="radio" id="a3-radio-2" name="a3" value="$50"><label>$50 </label>
+                        <input type="radio" id="a3-radio-3" name="a3" value="$100"><label>$100 </label>
+                        <input type="radio" id="a3-radio-4" name="a3" value="$200"><label>$200 </label>
+                        <input type="radio" id="a3-radio-5" name="a3" value="$500"><label>$500 </label>
+                        <input type="radio" id="a3-radio-6" name="a3" value="">
+                        <input type="text" id="a3-text" name="a3" size="11" placeholder="Enter Amount">
+                      </label>
+                      <br>
+                      <br>
+                      <input type="hidden" name="p3" value="1">
+                      <label for="t3" style="font-size: 130%;">Donation Frequency:<br>
+                        <input type="radio" name="t3" checked="checked" value="W"> Weekly
+                        <input type="radio" name="t3" value="M"> Monthly
+                        <input type="radio" name="t3" value="Y"> Yearly
+                      </label>
+                      <br>
+
+                      <!-- Set recurring payments until canceled. -->
+                      <input type="hidden" name="src" value="1">
+                      <br>
+                      <!-- Display the payment button. -->
+                      <input type="image" name="submit" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" alt="Donate">
+                      <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+                    </form>
+                  </div>
+                <div class="blank-gap-20"></div>
+
+              <fieldset>
+                <legend class="text-center header"><strong>Other Donation Options</strong></legend>
+                <div class="col-sm-4 text-center">
+                  <p style="font-size:100%;"><strong>Cheque<strong></p>
+                  <p style="font-size:100%;">Payable to "Open House CIC"</p>
+                </div>
+                <div class="col-sm-4 text-center" style="font-size:100%;">
+                  <p style="font-size:100%;"><strong>Bank Transfer</strong><p>
+                  <p style="font-size:100%;">Account Name: Open House CIC<br>
+                    BSB: 633 000<br>
+                    Account Number: 155054588</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <p style="font-size:100%;"><strong>Direct Debit</strong></p>
+                  <p style="font-size:100%;"> Contact Us for forms</p>
+                </div>
+                <!--<input type="text" class="form-control col-sm-4 col-center-block" id="type" name="type" placeholder="Donation" required>-->
+              </fieldset>
+            </div>
+          </div>
         </div>
+
+        <div class="blank-gap-20"></div>
+        <div class="media">
+          <div class="media-body">
+            <h3 class="media heading text-center"><b>Bequests </b></h3>
+            <p>We are grateful to those donors who have in the past remembered open house in their estate planning.
+              Bequests to open house contribute significantly to our long term financial well-being and help ensure the success of our
+              many programs on an ongoing basis.</p>
+            <p>Naming open house in your will is not difficult and you can designate any amount of your estate that you wish.</p>
+            <p>As you make plans for your estate we hope that you will remember a request to us. </p>
+          </div>
+        </div>
+        <p><b>For more information on bequests and other gifts to open house please contact our reception on 9450-7600</b></p>
       </div>
     </div>
-  </div>
-<!--</div>-->

@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 
 <style>
-/*body {
-  padding-top: 15px;
-  color: #000000;
-  }
-
-h2 {
-  color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
-}
-
-.jumbotron-custom {
-    margin-top: 20px;
-    background: #000 url("images/banner_background.jpg") no-repeat center center;
-    background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    color: #FFF; // change text color
-}*/
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -42,7 +22,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -77,6 +57,37 @@ p {
 .jumbotron {
   background-color:transparent !important;
 }
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <div class="blank-gap-30"></div>
@@ -92,7 +103,7 @@ p {
               <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <h1>Useful Links </h1>
+              <h1><strong>Useful Links </strong></h1>
             </div>
             <div class="col-sm-8 col-center-block">
               <hr/>
@@ -106,6 +117,12 @@ p {
   <div class="blank-gap-30"></div>
 
     <div class="jumbotron">
+      <div class="text-center">
+        <a href="documents/Banyule Nillumbik Community Referal Poster-2016.pdf" target="_blank"><li class="fa fa-file-pdf-o"><span style="font-family: 'Raleway', sans-serif; font-size:125%"><b> Download the Community Services Contact List</b></span></li></a>
+      </div>
+
+      <div class="blank-gap-30"></div>
+
       <p><b>Banyule City Council Services</b></p>
       <p style="font-size:115%">The Banyule Council provides numerous services to its community. These services will be used by everybody in the community during different stages of their lives. These range from services for the very young (maternal and child health care and child care) through to support services for our senior citizens (delivered meals and home care services).</p>
       <ul class='list-unstyled' style="font-size:115%;">
@@ -128,10 +145,5 @@ p {
         <li><a href='http://www.cfa.vic.gov.au/'>Country Fire Authority (CFA)</a></li>
         <li><a href='http://delwp.vic.gov.au/'>Department of Environment, Land, Water and Planning (DELWP)</b></a></li>
       </ul>
-
-      <div class="blank-gap-30"></div>
-
-      <a href="documents/Banyule Nillumbik Community Referal Poster-2016.pdf" target="_blank"><li class="fa fa-file-text"><span style="font-family: 'Raleway', sans-serif; font-size:125%"><b> Download the Community Services Contact List</b></span></li></a>
-
     </div>
 </div>

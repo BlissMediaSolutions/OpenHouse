@@ -22,7 +22,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -66,6 +66,37 @@ p {
     margin: auto;
 }
 #myImg:hover {opacity: 0.5;}
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <!-- === Jumbotron Header === -->
@@ -80,14 +111,14 @@ p {
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/Board.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
               <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <h1>Our Board</h1>
+              <h1><strong>Our Board</strong></h1>
             </div>
             <div class="col-sm-8 col-center-block">
               <hr/>
@@ -109,9 +140,9 @@ p {
   <div class="row">
    <div class="col-md-3">
     <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal" src='images/board/DWoods.jpg' alt='...' />
-      <div style="font-family: 'Sofia', cursive;">
+      <!--<div style="font-family: 'Sofia', cursive;">-->
         <p><h4 style="text-align: center"> Mr David Woods, OAM - Chairman </h4></p>
-      </div>
+      <!--</div>-->
 
       <!-- Modal -->
       <div class="modal fade" id="myModal" role="dialog">
@@ -137,9 +168,9 @@ p {
 
     <div class="col-md-3">
       <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal1" src='images/board/Paul1.jpg' alt='...' />
-      <div style="font-family: 'Sofia', cursive;">
+      <!--<div style="font-family: 'Sofia', cursive;">-->
         <p><h4 style="text-align: center"> Mr Paul Burgess - CEO </h4></p>
-      </div>
+      <!--</div>-->
 
       <!-- Modal -->
       <div class="modal fade" id="myModal1" role="dialog">
@@ -162,9 +193,9 @@ p {
 
     <div class="col-md-3">
      <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal2" src='images/board/PSporton.jpg' alt='...' />
-      <div style="font-family: 'Sofia', cursive;">
+      <!--<div style="font-family: 'Sofia', cursive;">-->
         <p><h4 style="text-align: center"> Mr Phillip Sporton </h4></p>
-      </div>
+      <!--</div>-->
 
       <!-- Modal -->
       <div class="modal fade" id="myModal2" role="dialog">
@@ -188,9 +219,9 @@ p {
 
     <div class="col-md-3">
       <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal3" src='images/board/RAnderson.jpg' alt='...' />
-      <div style="font-family: 'Sofia', cursive;">
+      <!--<div style="font-family: 'Sofia', cursive;">-->
         <p><h4 style="text-align: center"> Mr Rex Anderson </h4></p>
-      </div>
+      <!--</div>-->
 
       <!-- Modal -->
       <div class="modal fade" id="myModal3" role="dialog">
@@ -217,9 +248,9 @@ p {
   <div class="row">
    <div class="col-md-4">
     <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal4" src='images/board/MLamb.jpg' alt='...' />
-      <div style="font-family: 'Sofia', cursive;">
+      <!--<div style="font-family: 'Sofia', cursive;">-->
         <p><h4 style="text-align: center"> Ms Melanie Lamb </h4></p>
-      </div>
+      <!--</div>-->
 
       <!-- Modal -->
       <div class="modal fade" id="myModal4" role="dialog">
@@ -244,9 +275,9 @@ p {
 
     <div class="col-md-4">
      <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal5" src='images/board/MDonohue.jpg' alt='...' />
-       <div style="font-family: 'Sofia', cursive;">
+       <!--<div style="font-family: 'Sofia', cursive;">-->
          <p><h4 style="text-align: center"> Mr Michael Donohue </h4></p>
-       </div>
+       <!--</div>-->
 
        <!-- Modal -->
        <div class="modal fade" id="myModal5" role="dialog">
@@ -271,9 +302,9 @@ p {
 
      <div class="col-md-4">
       <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal6" src='images/board/ORuiz.jpg' alt='...' />
-        <div style="font-family: 'Sofia', cursive;">
+        <!--<div style="font-family: 'Sofia', cursive;">-->
           <p><h4 style="text-align: center"> Mr Oscar Ruiz </h4></p>
-        </div>
+        <!--</div>-->
 
         <!-- Modal -->
         <div class="modal fade" id="myModal6" role="dialog">

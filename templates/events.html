@@ -22,7 +22,8 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  /*text-shadow: 2px 2px #9e9e9e;*/
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -57,6 +58,37 @@ p {
 .jumbotron {
   background-color:transparent !important;
 }
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <div class="blank-gap-30"></div>
@@ -72,7 +104,7 @@ p {
               <hr/>
             </div>
               <div class="col-sm-12 col-center-block">
-                <h1>Coming Events </h1>
+                <h1><b>Coming Events <b></h1>
               </div>
               <div class="col-sm-8 col-center-block">
                 <hr/>
@@ -91,12 +123,10 @@ p {
   <div class="jumbotron">
     <div class="media">
       <div class="media-left media-middle">
-        <!--<a href="">-->
-        <img class="media-object" src="images/events/soccer-shoe.png" alt="...">
-        <!--</a>-->
+        <img class="media-object" src="images/events/soccer-shoe.png" alt="..." width="85" height="85">
       </div>
       <div class="media-body">
-        <h2 class="media-heading"><b>Backyard Sports 10-year Anniversary </b></h2>
+        <h3 class="media-heading"><b>Backyard Sports 10-year Anniversary </h3>
         <p>On Thursday, 15 December 2016 Open House will celebrate the ten year anniversary of its Backyard Sports offering for children and youths at the Malahan Reserve. </p>
         <p>It is wonderful to see so many happy children, from so many different backgrounds, playing the games together and everyone is welcome to the special anniversary sessions which will commence at 3.30pm which will include special games, awards and a BBQ. </p>
         <p><a class="btn btn-default" href="documents/events/Xmas_Carols_Flyer.pdf" target="_blank" role="button">View details &raquo;</a></p>
@@ -104,15 +134,12 @@ p {
     </div>
   <!--</div>-->
   <div class="blank-gap-30"></div>
-  <!--<div class="jumbotron">-->
     <div class="media">
       <div class="media-left media-middle">
-        <!--<a href="">-->
-          <img class="media-object" src="images/events/Christmas-Tree.png" alt="...">
-        <!--</a>-->
+        <img class="media-object" src="images/events/Christmas-Tree.png" alt="..." width="85" height="85">
       </div>
       <div class="media-body">
-        <h2 class="media-heading"><b>Christmas Carols</b></h2>
+        <h3 class="media-heading"><b>Christmas Carols</h3>
         <p>On the Friday before Christmas, that is, Friday 23 December 2016 Open House will be offering Christmas Carols and BBQ from our Macleod premises on the corner of Strathallan Road and Carwarp Street.</p>
         <p>A highlight of the event will be the leading of the music by the Salvation Army band.</p>
         <p>This alcohol free event is open to everyone so please come and join us for fellowship and a good sing along.</p>
@@ -121,15 +148,12 @@ p {
     </div>
   <!--</div>-->
   <div class="blank-gap-30"></div>
-  <!--<div class="jumbotron">-->
     <div class="media">
       <div class="media-left media-middle">
-        <!--<a href="documents/events/chrsitmas2016.pdf">-->
-        <img class="media-object" src="images/events/sun-vector-png.png" alt="...">
-        <!--</a>-->
+        <img class="media-object" src="images/events/sun-vector-png.png" alt="..." width="85" height="85">
       </div>
       <div class="media-body">
-        <h2 class="media-heading"><b>Summer Holidays Program</b></h2>
+        <h3 class="media-heading"><b>Summer Holidays Program<b></h3>
         <p>In January 2017 Open House will again offers its popular summer holiday program for children from our Macleod premises on the corner of Strathallan Road and Carwarp Street. Activities, both at Open House and during outings will include Laser Tag, outdoor adventures, cooking (and eating), BBQs in the park and a games day. </p>
         <p><a class="btn btn-default" href="documents/events/Xmas_Carols_Flyer.pdf" target="_blank" role="button">View details &raquo;</a></p>
       </div>

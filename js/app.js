@@ -129,7 +129,7 @@ app.config(function ($routeProvider) {
 //      controller: 'linksController',
       templateUrl: "templates/links.html"
     }).when("/donations", {
-//      controller: 'donationsController',
+//      controller: 'DonationsController',
       templateUrl: "templates/donations.html"
     })
 });
