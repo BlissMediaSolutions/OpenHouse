@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 
 <style>
-/*body {
-  padding-top: 15px;
-  color: #000000;
-  }
-
-h2 {
-  color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
-}
-
-.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
-}*/
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -42,7 +22,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -86,6 +66,37 @@ p {
 }
 
 #myImg:hover {opacity: 0.6;}
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <!-- === Start Script for Modal Image === -->
@@ -99,26 +110,21 @@ $(function() {
 </script>
 <!-- === End Script for Modal Image === -->
 
-<!-- === Page Header Start === -->
-<!--<div class="jumbotron jumbotron-custom">
-  <div class="container">
-    <h2 class="text-center" style="color: #27ace5; font-family: 'Kaushan Script', cursive;"><b>Fun 4 Teens</b></h2>
-  </div>
-</div>-->
+<!-- === Page Banner Start === -->
 <div class="blank-gap-30"></div>
 
 <div class="container">
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/fun4teens.jpg" alt="" class="center-block img-responsive" style="opacity: 0.9;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
               <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <h1>Drop In Cafe </h1>
+              <h1><strong>Drop In Cafe </strong></h1>
             </div>
             <div class="col-sm-8 col-center-block">
               <hr/>
@@ -134,7 +140,7 @@ $(function() {
 <!--<div class ="container">-->
   <div class="jumbotron">
     <p><b>When: </b>Every Friday from 3:30pm - 10:30pm (During the School Semester) </p>
-    <p><b>Where: </b>Open House, The Welcome Centre </p>
+    <p><b>Where: </b>The Welcome Centre, at Open House </p>
     <p>Our popular program include a relaxed Friday afternoon drop in “café like” centre for children, followed by a similar offering for teens in the evening at our Macleod facilities.</p>
     <p>This is a chance for children and teens to unwind after a busy week in a friendly, safe and fun atmosphere. The offering includes tasty cooked light snacks with some healthy fruit. With lots of volunteers and youth workers there is always someone to sit down with for a chat or to see who can perform like NBA superstar Steve Curry at the basketball hoop in the hall. </p>
     <p>A drop off service is offered for those participants needing a safe ride home. </p>

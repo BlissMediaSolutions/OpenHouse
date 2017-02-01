@@ -1,35 +1,6 @@
 <!DOCTYPE html>
 
 <style>
-/*body {
-  padding-top: 15px;
-  color: #000000;
-  }
-
-h2 {
-  color: #27ace5;
-  font-size: 300%;
-  text-shadow: 1px 1px #000000;
-}
-
-.jumbotron-custom {
-  margin-top: 20px;
-  background: #000 url("images/banner_background.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  color: #FFF; // change text color
-}
-
-.row.match-my-cols {
-    overflow: hidden;
-}
-
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-} */
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -51,7 +22,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -86,6 +57,37 @@ p {
 .jumbotron {
   background-color:transparent !important;
 }
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <!--<div class="jumbotron jumbotron-custom">
@@ -99,14 +101,14 @@ p {
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/community-group.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/mens-support.jpg" alt="" class="center-block img-responsive" style="opacity: 0.9;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
               <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <h1>Mens Support Group </h1>
+              <h1><strong>Mens Support Group </strong></h1>
             </div>
             <div class="col-sm-8 col-center-block">
               <hr/>
@@ -121,7 +123,7 @@ p {
 
 <!--<div class ="container">-->
   <div class="jumbotron">
-    <p><b>When: </b>.... </p>
+    <p><b>When: </b>tbc </p>
     <p><b>Where: </b>Open House </p>
     <p>In 2017 Open House will be resurrecting its group for men who want to get together on regular basis one evening each week. This is a chance for fellowship and fun as a group while participating in and enjoying shared activities.</p>
       <img id="myImg" class="img-responsive center-block" src="images/Avaition-Program.jpg" alt="Mens Support Group" width="300" height="200">

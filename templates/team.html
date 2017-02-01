@@ -22,7 +22,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
@@ -67,6 +67,37 @@ p {
 }
 
 #myImg:hover {opacity: 0.5;}
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 400%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+      font-size: 370%; }
+    p {
+      font-size: 100%; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 300%; }
+   p {
+        font-size: 95%; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 250%; }
+    p {
+      font-size: 90%; }
+ }
 </style>
 
 <div class="blank-gap-30"></div>
@@ -76,17 +107,17 @@ p {
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/banner/team.jpg" alt="" class="center-block img-responsive" style="opacity: 0.8;">
+        <img src="images/banner/team-1.jpg" alt="" class="center-block img-responsive" style="opacity: 0.9;">
         <div class="carousel-caption flex">
           <div class="row">
             <div class="col-sm-8 col-center-block">
-              <!--<hr/>-->
+              <hr/>
             </div>
             <div class="col-sm-12 col-center-block">
-              <!--<h1>Our Team</h1>-->
+              <h1><strong>Our Team </strong></h1>
             </div>
             <div class="col-sm-8 col-center-block">
-              <!--<hr/>-->
+              <hr/>
             </div>
           </div>
         </div>
@@ -423,9 +454,9 @@ p {
  <div class="col-md-6">
   <img height="100" width="140" align="middle" id="myImg" data-trigger="hover" data-toggle="modal" data-target="#myModal8" src='images/team/person-man.png' alt='...' />
     <div style="font-family: 'Indie Flower', cursive;">
-      <p><h4 style="text-align: center"><b> Paul Southwick </b></h4></p>
+      <p><h4 style="text-align: center"><b> Rebekah Tavargeri </b></h4></p>
     </div>
-    <p><h5 style="text-align: center"> Finance Manager </h5></p>
+    <p><h5 style="text-align: center"> Services Manager </h5></p>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal8" role="dialog">
@@ -435,21 +466,21 @@ p {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title" style="text-align:center"><b>Paul Southwick - Finance Manager</b></h4>
+        <h4 class="modal-title" style="text-align:center"><b>Rebekah Tavargeri - Services Manager</b></h4>
       </div>
       <div class="modal-body">
         <div class="row">
           <div class="col-xs-6">
             <img src="images\team\person-man.png" alt="Smiley face" height="220" width="280">
             <p></p>
-            <p><b>Qualifications: </b>BMS, GradDipMktg, DipFreeJourn, C.A., CMA, ACIS, AGIA, MAICD, PPL</p>
+            <p><b>Qualifications: </b>.....</p>
             <p><b>Experience: </b>.....</p>
           </div>
           <div class="col-xs-6">
             <div style="font-family: 'Indie Flower', cursive;">
-              <p>By the grace of God my life has been blessed. I have been privileged to work, live and travel all around the world for some of the very best companies.</p>
-              <p>Many people have not had these opportunities or been blessing with a great start in life. Now is the time to put back and help those who are less fortunate. Everyone is special, and everyone was made by God. We should take Jesus’ example and help them “have life and live it to the fullest”.</p>
-              <p>Jesus said “I am the way, the truth and the life, No one comes to the father except by me.”</p>
+              <p>Ms Tavargeri will be joining the Open House team in Feburary 2017</p>
+              <!--<p>Many people have not had these opportunities or been blessing with a great start in life. Now is the time to put back and help those who are less fortunate. Everyone is special, and everyone was made by God. We should take Jesus’ example and help them “have life and live it to the fullest”.</p>
+              <p>Jesus said “I am the way, the truth and the life, No one comes to the father except by me.”</p>-->
             </div>
           </div>
         </div>

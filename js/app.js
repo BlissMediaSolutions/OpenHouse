@@ -62,6 +62,9 @@ app.config(function ($routeProvider) {
     }).when("/photos", {
 //      controller: 'photosController',
       templateUrl: "templates/photos.html"
+    }).when("/videos", {
+//      controller: 'videoController',
+      templateUrl: "templates/videos.html"
     }).when("/reports", {
 //      controller: 'reportsController',
       templateUrl: "templates/reports.html"
