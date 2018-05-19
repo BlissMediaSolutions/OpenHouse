@@ -34,7 +34,7 @@
      $mail->Port = 465; // Port 465 as we're using SSL... or use Port 587 for TLS
      $mail->IsHTML(true);                               // We're sending a HTML formatted message
      $mail->Username = "webmaster@openhousecic.org.au"; // Gmail account for authentication
-     $mail->Password = "AD624or325";                     // Gmail password for authentication
+     $mail->Password = "*********";                     // Gmail password for authentication
      $mail->SetFrom("webmaster@openhousecic.org.au");   // The email is being sent from this address
      $mail->Subject = "Website Contact Form Enquiry";   // The subject line of the email
      $mail->Body = ($message);                          // The actual email message to be sent
